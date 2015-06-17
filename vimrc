@@ -8,6 +8,9 @@ set expandtab     " tabs are spaces
 set tabstop=2     " number of visual spaces per TAB
 set softtabstop=2 " number of spaces in tab when editing
 
+set splitright " split vertical panels to right
+set splitbelow " split horizontal panels to bottom
+
 set incsearch  " search as characters are entered
 set hlsearch   " highlight matches
 set ignorecase " ignore case when searching
