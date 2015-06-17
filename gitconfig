@@ -1,0 +1,15 @@
+[user]
+  name = Sebastián Estrella
+  email = sebas007estrella@gmail.com
+
+[core]
+  editor = vim
+
+[push]
+  default = current
+
+[alias]
+  br = branch
+  ci = commit
+  co = checkout
+  st = status
