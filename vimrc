@@ -1,12 +1,13 @@
-set number       " show line numbers
-set cursorline   " highlight current line
-set wildmenu     " visual autocomplete for command menu
-set laststatus=2 " always show the status line
-set t_Co=256     " number of terminal colors
+set number         " show line numbers
+set cursorline     " highlight current line
+set wildmenu       " visual autocomplete for command menu
+set laststatus=2   " always show the status line
+set t_Co=256       " number of terminal colors
+set colorcolumn=80 " show vertical line
 
 set expandtab     " tabs are spaces
 set tabstop=2     " number of visual spaces per TAB
-set softtabstop=2 " number of spaces in tab when editing
+set shiftwidth=2
 
 set splitright " split vertical panels to right
 set splitbelow " split horizontal panels to bottom
@@ -18,6 +19,11 @@ set smartcase  " only match case when starting with capital letter
 
 set backupdir=/tmp
 set directory=/tmp
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
 
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
