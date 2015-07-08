@@ -44,6 +44,7 @@ if filereadable(expand('~/.vim/plugins.vim'))
 endif
 
 syntax enable
+let g:solarized_termtrans=1
 set background=dark
 colorscheme solarized
 
