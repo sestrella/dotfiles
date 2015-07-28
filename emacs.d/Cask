@@ -1,2 +1,4 @@
 (source gnu)
 (source melpa)
+
+(depends-on "evil")
