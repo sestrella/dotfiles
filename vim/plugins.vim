@@ -10,5 +10,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab'
+Plug 'godlygeek/tabular'
 
 call plug#end()
