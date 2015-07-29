@@ -1,6 +1,9 @@
-[user]
-  name = Sebastián Estrella
-  email = sebas007estrella@gmail.com
+[alias]
+  br = branch
+  ci = commit
+  co = checkout
+  df = diff
+  st = status
 
 [core]
   editor = vim
@@ -8,9 +11,6 @@
 [push]
   default = current
 
-[alias]
-  br = branch
-  ci = commit
-  co = checkout
-  df = diff
-  st = status
+[user]
+  email = sebas007estrella@gmail.com
+  name  = Sebastián Estrella
