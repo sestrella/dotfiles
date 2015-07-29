@@ -6,6 +6,7 @@
 (setq vc-follow-symlinks t)
 
 (setq auto-mode-alist (cons '("Cask" . emacs-lisp-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("zshrc" . shell-script-mode) auto-mode-alist))
 
 ;; load packages using cask
 (require 'cask "~/.cask/cask.el")
