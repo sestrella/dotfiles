@@ -59,6 +59,7 @@ export PATH=$HOME/.rbenv/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.nvm/nvm.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
