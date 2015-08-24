@@ -82,4 +82,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source $HOME/.zsh/cask.sh
+source $HOME/.zsh/nvm.sh
 source $HOME/.zsh/rbenv.sh
