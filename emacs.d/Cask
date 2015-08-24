@@ -1,9 +1,12 @@
 (source gnu)
 (source melpa)
 
+(depends-on "bundler")
 (depends-on "evil")
-(depends-on "evil-surround")
+(depends-on "fill-column-indicator")
+(depends-on "fiplr")
 (depends-on "flycheck")
+(depends-on "neotree")
 (depends-on "projectile")
 (depends-on "projectile-rails")
 (depends-on "rspec-mode")
