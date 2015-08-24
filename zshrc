@@ -54,16 +54,12 @@ plugins=(git)
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/.cask/bin:$PATH
-export PATH=$HOME/.rbenv/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.nvm/nvm.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
-eval "$(rbenv init -)"
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -86,4 +82,4 @@ eval "$(rbenv init -)"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias emacs="emacs -nw"
+source $HOME/.zsh/rbenv.sh
