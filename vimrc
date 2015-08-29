@@ -2,7 +2,6 @@ set number         " show line numbers
 set cursorline     " highlight current line
 set wildmenu       " visual autocomplete for command menu
 set laststatus=2   " always show the status line
-set t_Co=256       " number of terminal colors
 set colorcolumn=80 " show vertical line
 
 set expandtab     " tabs are spaces
@@ -44,9 +43,6 @@ if filereadable(expand('~/.vim/plugins.vim'))
 endif
 
 syntax enable
-let g:solarized_termtrans=1
-set background=dark
-colorscheme solarized
 
 if executable('ag')
   let g:ctrlp_user_command='ag %s -l --nocolor -g ""'
