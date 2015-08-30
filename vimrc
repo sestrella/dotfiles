@@ -42,7 +42,13 @@ if filereadable(expand('~/.vim/plugins.vim'))
   source ~/.vim/plugins.vim
 endif
 
+set t_Co=256
+
+let g:solarized_termtrans=1
+
 syntax enable
+set background=dark
+colorscheme solarized
 
 if executable('ag')
   let g:ctrlp_user_command='ag %s -l --nocolor -g ""'
