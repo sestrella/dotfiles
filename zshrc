@@ -85,4 +85,5 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh/aliases.sh
 source $HOME/.zsh/cask.sh
 source $HOME/.zsh/nvm.sh
+source $HOME/.zsh/pyenv.sh
 source $HOME/.zsh/rbenv.sh
