@@ -1,3 +1,1 @@
-if [ -f "$HOME/.nvm/nvm.sh" ]; then
-  source "$HOME/.nvm/nvm.sh"
-fi
+source "$HOME/.nvm/nvm.sh"
