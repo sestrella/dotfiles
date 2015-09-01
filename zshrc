@@ -11,8 +11,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-export TERM=xterm-256color
-
 for f in "$HOME/.zsh/"*.zsh; do
   source "$f"
 done
