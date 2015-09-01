@@ -7,7 +7,7 @@
 
 [core]
   editor = vim
-  excludesfile = ~/.gitignore_global
+  excludesfile = ~/.gitignore.global
 
 [push]
   default = current
