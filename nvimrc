@@ -21,6 +21,7 @@ let g:mapleader=','
 
 let g:airline_powerline_fonts=1
 let g:ctrlp_map='<leader>p'
+let g:deoplete#enable_at_startup=1
 let g:solarized_termtrans=1
 
 if executable('ag')
@@ -30,6 +31,7 @@ endif
 
 call g:plug#begin('~/.nvim/plugged')
 
+Plug 'Shougo/deoplete.nvim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'benekastah/neomake'
 Plug 'benmills/vimux'
