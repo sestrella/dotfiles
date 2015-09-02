@@ -31,7 +31,6 @@ endif
 
 call g:plug#begin('~/.nvim/plugged')
 
-Plug 'Shougo/deoplete.nvim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'benekastah/neomake'
 Plug 'benmills/vimux'
