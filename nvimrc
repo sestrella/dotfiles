@@ -1,5 +1,5 @@
 set background=dark
-set colorcolumn=80
+set colorcolumn=80 " display vertical line at 80 chars
 set cursorline " show cursor position
 set number " show line numbers
 
@@ -9,10 +9,10 @@ set shiftwidth=2 " 1 tab == 2 spaces
 set splitbelow " split vertical panels to the bottom
 set splitright " split horizontal panels to the right
 
-set hlsearch
-set ignorecase
-set incsearch
-set smartcase
+set hlsearch " highlight search matches
+set ignorecase " ignore case while searching
+set incsearch " search like in modern browsers
+set smartcase " enabled case-sensitve only when first letter is uppercase
 
 set backupdir=/tmp
 set directory=/tmp
