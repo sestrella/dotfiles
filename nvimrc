@@ -1,7 +1,9 @@
 set background=dark
 set colorcolumn=80 " display vertical line at 80 chars
 set cursorline " show cursor position
+set mouse="" " disable mouse selection
 set number " show line numbers
+set textwidth=80 " wrap text longer than 80 chars
 
 set expandtab " replace tabs with spaces
 set shiftwidth=2 " 1 tab == 2 spaces
@@ -35,6 +37,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'benekastah/neomake'
 Plug 'benmills/vimux'
 Plug 'bling/vim-airline'
+Plug 'ervandew/supertab'
 Plug 'godlygeek/tabular'
 Plug 'keith/tmux.vim'
 Plug 'kien/ctrlp.vim'
@@ -51,6 +54,16 @@ call g:plug#end()
 
 syntax enable
 colorscheme solarized
+
+" move across wrapped lines
+map j gj
+map k gk
+
+" breaking bad habits
+noremap <up> <NOP>
+noremap <down> <NOP>
+noremap <left> <NOP>
+noremap <right> <NOP>
 
 noremap <leader><space> :nohlsearch<CR>
 
