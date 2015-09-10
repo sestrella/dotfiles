@@ -1,0 +1,11 @@
+(source gnu)
+(source melpa)
+
+(depends-on "airline-themes")
+(depends-on "evil")
+(depends-on "evil-rails")
+(depends-on "evil-surround")
+(depends-on "flycheck")
+(depends-on "flycheck-pos-tip")
+(depends-on "projectile-rails")
+(depends-on "solarized-theme")
