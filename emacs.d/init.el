@@ -7,6 +7,8 @@
 (setq linum-format "%3d ")
 (global-linum-mode)
 
+(menu-bar-mode -1)
+
 (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
 (add-to-list 'auto-mode-alist '("zshrc" . sh-mode))
 
