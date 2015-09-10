@@ -11,6 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-for f in "$HOME/.zsh/"*.zsh; do
-  source "$f"
+for f in "$HOME/.zsh/"*.sh; do
+  if [ -e "$f" ]; then
+    source "$f"
+  else
+    echo "Broken link $f"
+  fi
 done
