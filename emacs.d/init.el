@@ -1,6 +1,9 @@
 ;;; package --- Summary
 ;;; Commentary:
 ;;; Code:
+(setq auto-save-default nil)
+(setq make-backup-files nil)
+
 (setq linum-format "%3d ")
 (global-linum-mode)
 
@@ -19,8 +22,19 @@
 (require 'airline-themes)
 (airline-themes-set-modeline)
 
+(require 'whitespace-cleanup-mode)
+(global-whitespace-cleanup-mode)
+
 (require 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
+
+(require 'flycheck-pos-tip)
+(eval-after-load 'flycheck
+  '(custom-set-variables
+    '(flycheck-display-errors-function #'flycheck-pos-tip-error-messages)))
+
+(require 'auto-complete)
+(ac-config-default)
 
 (require 'evil-surround)
 (global-evil-surround-mode 1)
