@@ -41,7 +41,19 @@
 (require 'evil-surround)
 (global-evil-surround-mode 1)
 
-(require 'evil-rails)
+(require 'projectile-rails)
+(evil-ex-define-cmd "Econtroller" 'projectile-rails-find-controller)
+(evil-ex-define-cmd "Ehelper"     'projectile-rails-find-helper)
+(evil-ex-define-cmd "Emigration"  'projectile-rails-find-migration)
+(evil-ex-define-cmd "Emodel"      'projectile-rails-find-model)
+(evil-ex-define-cmd "Espec"       'projectile-rails-find-spec)
+(evil-ex-define-cmd "Eview"       'projectile-rails-find-view)
+
+(evil-ex-define-cmd "Eschema" 'projectile-rails-goto-schema)
+
+(evil-ex-define-cmd "A"  'projectile-toggle-between-implementation-and-test)
+(evil-ex-define-cmd "AS" (lambda() (interactive) (split-window-vertically) (projectile-toggle-between-implementation-and-test)))
+(evil-ex-define-cmd "AV" (lambda() (interactive) (split-window-horizontally) (projectile-toggle-between-implementation-and-test)))
 
 (provide 'init)
 ;;; init.el ends here

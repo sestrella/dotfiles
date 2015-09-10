@@ -4,7 +4,6 @@
 (depends-on "airline-themes")
 (depends-on "auto-complete")
 (depends-on "evil")
-(depends-on "evil-rails")
 (depends-on "evil-surround")
 (depends-on "flycheck")
 (depends-on "flycheck-pos-tip")
