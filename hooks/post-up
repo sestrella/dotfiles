@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+Dir[File.expand_path('~/.zsh/*')].each do |f|
+  unless File.exist?(f)
+    puts "Removing broken symlink \"#{f}\""
+    File.delete(f)
+  end
+end
+
+puts 'Installing emacs plugins'
+`(cd ~/.emacs.d && cask install)`
