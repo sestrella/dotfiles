@@ -14,7 +14,8 @@
 (add-to-list 'auto-mode-alist '("zpreztorc" . sh-mode))
 (add-to-list 'auto-mode-alist '("zshrc" . sh-mode))
 
-(require 'cask "~/.cask/cask.el")
+;;; FIXME only works on MAC OSX
+(require 'cask "/usr/local/opt/cask/cask.el")
 (cask-initialize)
 
 (require 'evil)
