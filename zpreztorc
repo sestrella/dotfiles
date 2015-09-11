@@ -24,9 +24,6 @@ zstyle ':prezto:*:*' color 'yes'
 # Set the Prezto modules to load (browse modules).
 # The order matters.
 zstyle ':prezto:load' pmodule \
-  'git' \
-  'ruby' \
-  'rails' \
   'environment' \
   'terminal' \
   'editor' \
@@ -35,14 +32,15 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'prompt'
+  'prompt' \
+  'git'
 
 #
 # Editor
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-# zstyle ':prezto:module:editor' key-bindings 'emacs'
+zstyle ':prezto:module:editor' key-bindings 'vi'
 
 # Auto convert .... to ../..
 # zstyle ':prezto:module:editor' dot-expansion 'yes'
