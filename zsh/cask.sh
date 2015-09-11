@@ -1,2 +1,2 @@
 #!/bin/bash
-export PATH="$HOME/.cask/bin:$PATH"
+#export PATH="$HOME/.cask/bin:$PATH"

@@ -1,6 +1,6 @@
 #!/bin/bash
-export PATH="$HOME/.pyenv/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
 
 if which pyenv > /dev/null; then
-    eval "$(pyenv init -)"
+  eval "$(pyenv init -)"
 fi
