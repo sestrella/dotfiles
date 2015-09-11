@@ -10,6 +10,8 @@
 (menu-bar-mode -1)
 
 (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
+
+(add-to-list 'auto-mode-alist '("zpreztorc" . sh-mode))
 (add-to-list 'auto-mode-alist '("zshrc" . sh-mode))
 
 (require 'cask "~/.cask/cask.el")
