@@ -27,6 +27,14 @@
   '(custom-set-variables
     '(flycheck-display-errors-function #'flycheck-pos-tip-error-messages)))
 
+(require 'neotree)
+(evil-leader/set-key "n" 'neotree-toggle)
+
+(require 'fiplr)
+(setq fiplr-ignored-globs '((directories (".git" "tmp" "vendor"))
+			    (files ("*.png"))))
+(evil-leader/set-key "p" 'fiplr-find-file)
+
 (require 'projectile-rails)
 (evil-ex-define-cmd "Econtroller" 'projectile-rails-find-controller)
 (evil-ex-define-cmd "Ehelper"     'projectile-rails-find-helper)
