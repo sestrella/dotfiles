@@ -1,8 +1,9 @@
 ;;; package --- Summary
 ;;; Commentary:
 ;;; Code:
-(menu-bar-mode -1)          ;;; hide menu bar
-(setq vc-follow-symlinks t) ;;; always follow symlinks
+(menu-bar-mode -1)           ;;; hide menu bar
+(setq vc-follow-symlinks t)  ;;; always follow symlinks
+(setq make-backup-files nil) ;;; prevent backup files creation
 
 ;;; Mac OS X     => /usr/local/opt/cask/cask.el
 ;;; Linux (Arch) => /usr/share/cask/cask.el
@@ -27,6 +28,9 @@
   '(custom-set-variables
     '(flycheck-display-errors-function #'flycheck-pos-tip-error-messages)))
 
+(require 'whitespace-cleanup-mode)
+(global-whitespace-cleanup-mode)
+
 (require 'neotree)
 (evil-leader/set-key "n" 'neotree-toggle)
 
@@ -34,6 +38,12 @@
 (setq fiplr-ignored-globs '((directories (".git" "tmp" "vendor"))
 			    (files ("*.png"))))
 (evil-leader/set-key "p" 'fiplr-find-file)
+
+(require 'scss-mode)
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
+(add-to-list 'auto-mode-alist '("\\.sass\\'" . scss-mode))
+
+(require 'haml-mode)
 
 (require 'projectile-rails)
 (evil-ex-define-cmd "Econtroller" 'projectile-rails-find-controller)
