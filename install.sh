@@ -1,5 +1,7 @@
 #!/bin/bash
-set -x
+# [e] stop execution on error
+# [x] print each command executed
+set -ex
 
 ln -sf $PWD/bundle/config $HOME/.bundle/config
 ln -sf $PWD/emacs.d/Cask $HOME/.emacs.d/Cask
