@@ -11,19 +11,16 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cask/bin:$PATH"
 
-if which rbenv > /dev/null; then
-  eval "$(rbenv init -)"
-fi
+source ~/.nvm/nvm.sh
 
-if [[ -f /usr/share/nvm/init-nvm.sh ]]; then
-  source /usr/share/nvm/init-nvm.sh
-fi
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+alias npm-exec="PATH=$(npm bin):$PATH"
 
 alias tas="tmux attach-session -t"
 alias tks="tmux kill-session -t"
 alias tls="tmux list-sessions"
 alias tns="tmux new-session -s"
-
-alias vim="emacs -nw"
