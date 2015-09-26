@@ -18,8 +18,6 @@ source ~/.nvm/nvm.sh
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-alias npm-exec="PATH=$(npm bin):$PATH"
-
 alias tas="tmux attach-session -t"
 alias tks="tmux kill-session -t"
 alias tls="tmux list-sessions"
