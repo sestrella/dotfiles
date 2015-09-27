@@ -35,20 +35,17 @@ call g:plug#begin('~/.nvim/plugged')
 
 Plug 'altercation/vim-colors-solarized'
 Plug 'benekastah/neomake'
-Plug 'benmills/vimux'
 Plug 'bling/vim-airline'
 Plug 'ervandew/supertab'
 Plug 'godlygeek/tabular'
-Plug 'keith/tmux.vim'
 Plug 'kien/ctrlp.vim'
-Plug 'ntpeters/vim-better-whitespace'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
-Plug 'skalnik/vim-vroom'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
+
 
 call g:plug#end()
 
@@ -75,7 +72,3 @@ if exists(':Tabularize')
   nmap <Leader>a: :Tabularize /:\zs<CR>
   vmap <Leader>a: :Tabularize /:\zs<CR>
 endif
-
-augroup neomake
-  autocmd! BufWritePost * Neomake
-augroup END
