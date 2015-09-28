@@ -6,7 +6,7 @@
   st = status
 
 [core]
-  editor       = vim
+  editor = vim
   excludesfile = ~/.gitignore.global
 
 [push]
@@ -14,4 +14,4 @@
 
 [user]
   email = sebas007estrella@gmail.com
-  name  = Sebastián Estrella
+  name = Sebastián Estrella
