@@ -11,6 +11,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+export TERM="xterm-256color"
+
 export PATH="$HOME/.cask/bin:$PATH"
 
 source ~/.nvm/nvm.sh
