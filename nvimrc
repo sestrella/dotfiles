@@ -7,11 +7,6 @@ set textwidth=80 " wrap text longer than 80 chars
 set expandtab " replace tabs with spaces
 set shiftwidth=2 " 1 tab == 2 spaces
 
-set hlsearch " highlight search matches
-set ignorecase " ignore case while searching
-set incsearch " search like in modern browsers
-set smartcase " enabled case-sensitve only when first letter is uppercase
-
 set backupdir=/tmp
 set directory=/tmp
 
@@ -37,8 +32,6 @@ colorscheme solarized
 " move across wrapped lines
 map j gj
 map k gk
-
-noremap <leader><space> :nohlsearch<CR>
 
 for fpath in split(globpath('~/.nvim/post-plugins', '*.vim'), '\n')
   exe 'source' fpath
