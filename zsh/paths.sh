@@ -1,2 +1,2 @@
 #!/bin/bash
-find ~/.zsh/paths -type f -exec source {} \;
+for f in ~/.zsh/paths/*; do source $f; done

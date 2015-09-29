@@ -1,2 +1,2 @@
 #!/bin/bash
-find ~/.zsh/aliases -type f -exec source {} \;
+for f in ~/.zsh/aliases/*; do source $f; done

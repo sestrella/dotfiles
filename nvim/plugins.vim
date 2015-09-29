@@ -1,6 +1,7 @@
 Plug 'altercation/vim-colors-solarized'
 Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
+Plug 'bronson/vim-trailing-whitespace'
 Plug 'ervandew/supertab'
 Plug 'godlygeek/tabular'
 Plug 'kien/ctrlp.vim'
