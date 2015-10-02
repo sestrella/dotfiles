@@ -12,9 +12,10 @@ set directory=/tmp
 
 let g:mapleader=','
 
-let g:airline_powerline_fonts=1
-for fpath in split(globpath('~/.nvim/pre-plugins', '*.vim'), '\n')
-  exe 'source' fpath
+nmap <leader>w :w!<cr>
+
+for g:fpath in split(globpath('~/.nvim/pre-plugins', '*.vim'), '\n')
+  exe 'source' g:fpath
 endfor
 
 call g:plug#begin('~/.nvim/plugged')
@@ -25,16 +26,6 @@ endif
 
 call g:plug#end()
 
-syntax enable
-set background=dark
-colorscheme solarized
-
-" move across wrapped lines
-map j gj
-map k gk
-
-for fpath in split(globpath('~/.nvim/post-plugins', '*.vim'), '\n')
-  exe 'source' fpath
+for g:fpath in split(globpath('~/.nvim/post-plugins', '*.vim'), '\n')
+  exe 'source' g:fpath
 endfor
-
-autocmd! BufWritePost * Neomake
