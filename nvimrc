@@ -10,6 +10,7 @@ set shiftwidth=2 " 1 tab == 2 spaces
 let g:mapleader=','
 
 nmap <leader>w :w!<cr>
+nmap <leader>g G=gg<cr>
 
 for g:fpath in split(globpath('~/.nvim/pre-plugins', '*.vim'), '\n')
   exe 'source' g:fpath
