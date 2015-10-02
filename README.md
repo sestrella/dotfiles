@@ -7,5 +7,5 @@ My configuration files.
 Run the following command:
 
 ```
-rake install
+./install.rb
 ```
