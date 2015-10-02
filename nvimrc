@@ -7,9 +7,6 @@ set textwidth=80 " wrap text longer than 80 chars
 set expandtab " replace tabs with spaces
 set shiftwidth=2 " 1 tab == 2 spaces
 
-set backupdir=/tmp
-set directory=/tmp
-
 let g:mapleader=','
 
 nmap <leader>w :w!<cr>
