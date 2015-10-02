@@ -36,3 +36,5 @@ map k gk
 for fpath in split(globpath('~/.nvim/post-plugins', '*.vim'), '\n')
   exe 'source' fpath
 endfor
+
+autocmd! BufWritePost * Neomake
