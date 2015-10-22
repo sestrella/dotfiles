@@ -6,7 +6,7 @@
   st = status
 
 [core]
-  editor = vim
+  editor = nvim
   excludesfile = ~/.gitignore.global
 
 [push]
