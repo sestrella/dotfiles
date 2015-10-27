@@ -12,18 +12,14 @@ let g:mapleader=','
 nmap <leader>w :w!<cr>
 nmap <leader>g G=gg<cr>
 
-for g:fpath in split(globpath('~/.nvim/pre-plugins', '*.vim'), '\n')
+for g:fpath in split(globpath('~/.vim/pre-plugins', '*.vim'), '\n')
   exe 'source' g:fpath
 endfor
 
-call g:plug#begin('~/.nvim/plugged')
-
-if filereadable(expand('~/.nvim/plugins.vim'))
-  source ~/.nvim/plugins.vim
+if filereadable(expand('~/.vim/plugins.vim'))
+  source ~/.vim/plugins.vim
 endif
 
-call g:plug#end()
-
-for g:fpath in split(globpath('~/.nvim/post-plugins', '*.vim'), '\n')
+for g:fpath in split(globpath('~/.vim/post-plugins', '*.vim'), '\n')
   exe 'source' g:fpath
 endfor
