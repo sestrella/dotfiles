@@ -13,7 +13,9 @@ endfor
 
 call g:plug#begin('~/.config/nvim/plugged')
 
-source ~/.config/nvim/plugins.vim
+if filereadable(expand('~/.config/nvim/plugins.vim'))
+  source ~/.config/nvim/plugins.vim
+endif
 
 call g:plug#end()
 

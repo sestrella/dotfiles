@@ -1,1 +1,1 @@
-nnoremap <leader>w :FixWhitespace<cr>
+nmap <leader>w :FixWhitespace<cr>
