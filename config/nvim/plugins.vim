@@ -1,4 +1,4 @@
-lug 'altercation/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized'
 Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
 Plug 'bronson/vim-trailing-whitespace'
