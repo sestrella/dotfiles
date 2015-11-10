@@ -3,7 +3,8 @@ set cursorline     " show cursor position
 set expandtab      " replace tabs with spaces
 set mouse=""       " disable mouse
 set number         " display line numbers
-set shiftwidth=2   " 1 tab == 2 spaces
+set shiftwidth=2   " replace 1 tab == 2 spaces
+set tabstop=2      " display 1 tab == 2 spaces
 
 let g:mapleader=','
 
