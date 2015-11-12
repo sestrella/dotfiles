@@ -12,3 +12,7 @@ git clone https://github.com/sestrella/dotfiles.git ~/.dotfiles
 echo 'EXCLUDES=README.md' > ~/.rcrc
 rcup -v
 ```
+
+## TODO
+
+- Display CPU and memory usage on tmux status bar
