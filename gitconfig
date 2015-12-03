@@ -1,9 +1,10 @@
 [alias]
-  br = branch
-  ci = commit
-  co = checkout
-  df = diff
-  st = status
+  last = log -1 HEAD
+  br   = branch
+  ci   = commit
+  co   = checkout
+  df   = diff
+  st   = status
 
 [core]
   excludesfile = ~/.gitignore

@@ -1,4 +1,5 @@
 set colorcolumn=80 " display vertical line at 80 chars
+set textwidth=80
 set cursorline     " show cursor position
 set expandtab      " replace tabs with spaces
 set mouse=""       " disable mouse
