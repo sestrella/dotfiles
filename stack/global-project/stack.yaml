@@ -1,0 +1,6 @@
+flags: {}
+extra-package-dbs: []
+packages: []
+extra-deps:
+  - cabal-helper-0.6.2.0
+resolver: lts-3.16
