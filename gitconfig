@@ -16,3 +16,7 @@
 [user]
   email = sebas007estrella@gmail.com
   name = Sebastián Estrella
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
