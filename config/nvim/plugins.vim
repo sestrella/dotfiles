@@ -1,3 +1,4 @@
+Plug 'Shougo/deoplete.nvim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
