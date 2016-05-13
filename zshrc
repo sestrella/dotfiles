@@ -1,21 +1,13 @@
-export EDITOR=nvim
-export PATH=$HOME/.local/bin:$PATH
-export TERM=xterm-256color
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
 
-alias be='bundle exec'
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
-
-alias tas='tmux attach-session -t'
-alias tks='tmux kill-session -t'
-alias tls='tmux list-sessions'
-alias tns='tmux new-session -s'
-
-alias vim='nvim'
-
-eval "$(pyenv init -)"
-eval "$(rbenv init -)"
-
-source ~/.zpreztorc
-source /usr/share/nvm/init-nvm.sh
+# Customize to your needs...
