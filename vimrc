@@ -33,6 +33,7 @@ Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-surround'
 Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc'
+Plug 'godlygeek/tabular'
 
 call plug#end()
 
