@@ -17,7 +17,7 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
+export EDITOR='nvim'
 export VISUAL='nano'
 export PAGER='less'
 
