@@ -11,6 +11,8 @@ set smarttab
 set shiftwidth=2
 set tabstop=2
 
+set wildmenu
+
 let mapleader = ','
 
 map <C-h> <C-W>h
@@ -21,6 +23,7 @@ map <C-l> <C-W>l
 call plug#begin('~/.vim/plugged')
 
 Plug 'bling/vim-airline'
+Plug 'godlygeek/tabular'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
