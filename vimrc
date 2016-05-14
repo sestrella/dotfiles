@@ -25,11 +25,14 @@ call plug#begin('~/.vim/plugged')
 Plug 'bling/vim-airline'
 Plug 'godlygeek/tabular'
 Plug 'kien/ctrlp.vim'
+Plug 'nbouscal/vim-stylish-haskell'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 
 call plug#end()
+
+let g:airline_powerline_fonts = 1
 
 let g:ctrlp_map = '<c-p>'
 
