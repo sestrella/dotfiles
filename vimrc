@@ -30,10 +30,10 @@ Plug 'nbouscal/vim-stylish-haskell'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-projectionist'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc'
-Plug 'godlygeek/tabular'
 
 call plug#end()
 
