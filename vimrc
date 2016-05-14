@@ -34,11 +34,11 @@ call plug#end()
 
 let g:airline_powerline_fonts = 1
 
-let g:ctrlp_map = '<c-p>'
+let g:ctrlp_map = '<leader>p'
 
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
   let g:ctrlp_use_caching = 0
 endif
 
-map <C-n> :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
