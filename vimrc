@@ -25,10 +25,14 @@ call plug#begin('~/.vim/plugged')
 Plug 'bling/vim-airline'
 Plug 'godlygeek/tabular'
 Plug 'kien/ctrlp.vim'
+Plug 'majutsushi/tagbar'
 Plug 'nbouscal/vim-stylish-haskell'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-surround'
+Plug 'xolox/vim-easytags'
+Plug 'xolox/vim-misc'
 
 call plug#end()
 
