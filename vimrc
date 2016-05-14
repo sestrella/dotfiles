@@ -46,3 +46,4 @@ if executable('ag')
 endif
 
 map <leader>n :NERDTreeToggle<CR>
+map <leader>t :TagbarToggle<CR>
