@@ -23,6 +23,7 @@ map <C-l> <C-W>l
 call plug#begin('~/.vim/plugged')
 
 Plug 'bling/vim-airline'
+Plug 'ervandew/supertab'
 Plug 'godlygeek/tabular'
 Plug 'kien/ctrlp.vim'
 Plug 'majutsushi/tagbar'
