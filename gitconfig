@@ -8,6 +8,7 @@
   unstage = reset HEAD --
 
 [core]
+  editor=vim
   excludesfile = ~/.gitignore
 
 [push]

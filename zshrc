@@ -12,4 +12,5 @@ fi
 
 # Customize to your needs...
 export PATH=$HOME/.local/bin:$PATH
+export EDITOR=vim
 export TERM="xterm-256color"
