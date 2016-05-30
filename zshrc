@@ -12,6 +12,7 @@ fi
 
 # Customize to your needs...
 export PATH="$HOME/.local/bin:$PATH"
+export TERM="xterm-256color"
 
 alias tas='tmux attach-session -t'
 alias tks='tmux kill-session -t'

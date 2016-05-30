@@ -22,6 +22,7 @@ map <C-l> <C-W>l
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'altercation/vim-colors-solarized'
 Plug 'bling/vim-airline'
 Plug 'ervandew/supertab'
 Plug 'godlygeek/tabular'
@@ -37,6 +38,13 @@ Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc'
 
 call plug#end()
+
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+
+syntax enable
+set background=dark
+colorscheme solarized
 
 let g:airline_powerline_fonts = 1
 
