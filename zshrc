@@ -11,7 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-export PATH="$HOME/.local/bin:$PATH"
+if [[ -d "$HOME/.local/bin" ]]; then
+  export PATH="$HOME/.local/bin:$PATH"
+fi
+
 export TERM="xterm-256color"
 
 alias tas='tmux attach-session -t'
@@ -19,6 +22,6 @@ alias tks='tmux kill-session -t'
 alias tls='tmux list-sessions'
 alias tns='tmux new-session -s'
 
-if [[ -f "$HOME/.nix-profile/etc/profile.d/nix.sh" ]]; then
+if [[ -s "$HOME/.nix-profile/etc/profile.d/nix.sh" ]]; then
   source "$HOME/.nix-profile/etc/profile.d/nix.sh"
 fi
