@@ -7,8 +7,8 @@ set nowb
 set noswapfile
 
 set expandtab
-set smarttab
 set shiftwidth=2
+set smarttab
 set tabstop=2
 
 set wildmenu
@@ -22,38 +22,12 @@ map <C-l> <C-W>l
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'altercation/vim-colors-solarized'
-Plug 'bling/vim-airline'
-Plug 'ervandew/supertab'
-Plug 'godlygeek/tabular'
-Plug 'kien/ctrlp.vim'
-Plug 'majutsushi/tagbar'
-Plug 'nbouscal/vim-stylish-haskell'
-Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-projectionist'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
-Plug 'xolox/vim-easytags'
-Plug 'xolox/vim-misc'
+if filereadable(expand('~/.vim/plugins.vim'))
+  source ~/.vim/plugins.vim
+endif
 
 call plug#end()
 
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-
-syntax enable
-set background=dark
-colorscheme solarized
-
-let g:airline_powerline_fonts = 1
-
-let g:ctrlp_map = '<leader>p'
-
-if executable('ag')
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-  let g:ctrlp_use_caching = 0
-endif
-
-map <leader>n :NERDTreeToggle<CR>
-map <leader>t :TagbarToggle<CR>
+for g:fpath in split(globpath('~/.vim/plugins', '*.vim'), '\n')
+  exe 'source' g:fpath
+endfor
