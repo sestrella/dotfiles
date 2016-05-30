@@ -12,3 +12,7 @@ fi
 
 # Customize to your needs...
 export PATH="$HOME/.local/bin:$PATH"
+
+alias tas='tmux attach-session -t'
+alias tls='tmux list-sessions'
+alias tns='tmux new-session -s'
