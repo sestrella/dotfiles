@@ -1,15 +1,10 @@
 [alias]
-  br      = branch
-  ci      = commit
-  co      = checkout
-  df      = diff
-  last    = log -1 HEAD
-  st      = status
-  unstage = reset HEAD --
-
-[core]
-  editor=vim
-  excludesfile = ~/.gitignore
+  br = branch
+  ci = commit
+  co = checkout
+  df = diff
+  last = log -1 HEAD
+  st = status
 
 [push]
   default = current
@@ -17,7 +12,3 @@
 [user]
   email = sebas007estrella@gmail.com
   name = Sebastián Estrella
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
