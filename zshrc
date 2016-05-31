@@ -17,8 +17,6 @@ fi
 
 export TERM='xterm-256color'
 
-alias git='hub'
-
 alias tas='tmux attach-session -t'
 alias tks='tmux kill-session -t'
 alias tls='tmux list-sessions'
