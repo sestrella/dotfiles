@@ -35,7 +35,8 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'git' \
   'ssh' \
-  'dpkg'
+  'dpkg' \
+  'utility'
 
 #
 # Autosuggestions
