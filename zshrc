@@ -15,6 +15,9 @@ if [[ -d "$HOME/.local/bin" ]]; then
   export PATH="$HOME/.local/bin:$PATH"
 fi
 
+export VISUAL=vim
+export EDITOR=vim
+
 export TERM='xterm-256color'
 
 alias tas='tmux attach-session -t'
