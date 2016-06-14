@@ -56,3 +56,6 @@
 
 (package-install 'haskell-mode)
 (setq haskell-stylish-on-save t)
+
+(package-install 'evil-nerd-commenter)
+(evil-leader/set-key "c SPC" 'evilnc-comment-or-uncomment-lines)
