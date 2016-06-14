@@ -20,6 +20,11 @@
 (menu-bar-mode -1)
 
 (package-install 'neotree)
+(setq neo-smart-open t)
+(add-hook
+  'neotree-mode-hook
+  (lambda ()
+    (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)))
 
 (package-install 'evil-leader)
 (global-evil-leader-mode)
@@ -37,6 +42,7 @@
 (load-theme 'solarized t)
 
 (global-linum-mode t)
+(setq linum-format "%3d ")
 
 (setq-default indent-tabs-mode nil)
 
@@ -46,5 +52,5 @@
 
 (setq make-backup-files nil)
 
-(package-install 'whitespace)
-(global-whitespace-mode)
+;(package-install 'whitespace)
+;(global-whitespace-mode)
