@@ -53,3 +53,6 @@
 (setq make-backup-files nil)
 
 (add-to-list 'auto-mode-alist '("zshrc\\'" . sh-mode))
+
+(package-install 'haskell-mode)
+(setq haskell-stylish-on-save t)
