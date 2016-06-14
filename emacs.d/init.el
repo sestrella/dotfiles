@@ -52,5 +52,4 @@
 
 (setq make-backup-files nil)
 
-;(package-install 'whitespace)
-;(global-whitespace-mode)
+(add-to-list 'auto-mode-alist '("zshrc\\'" . sh-mode))
