@@ -59,3 +59,5 @@
 
 (package-install 'evil-nerd-commenter)
 (evil-leader/set-key "c SPC" 'evilnc-comment-or-uncomment-lines)
+
+(setq column-number-mode t)
