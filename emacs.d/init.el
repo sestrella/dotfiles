@@ -8,8 +8,8 @@
 (package-install 'evil)
 (evil-mode 1)
 
-(package-install 'intero)
-(add-hook 'haskell-mode-hook 'intero-mode)
+;(package-install 'intero)
+;(add-hook 'haskell-mode-hook 'intero-mode)
 
 (package-install 'flycheck)
 (global-flycheck-mode)
@@ -32,10 +32,10 @@
 (evil-leader/set-leader ",")
 (evil-leader/set-key "n" 'neotree-toggle)
 
-(package-install 'flycheck-status-emoji)
-(eval-after-load
-  "flycheck"
-  '(add-hook 'flycheck-mode-hook 'flycheck-status-emoji-mode))
+;(package-install 'flycheck-status-emoji)
+;(eval-after-load
+  ;"flycheck"
+  ;'(add-hook 'flycheck-mode-hook 'flycheck-status-emoji-mode))
 
 (package-install 'color-theme-solarized)
 (set-terminal-parameter nil 'background-mode 'dark)
@@ -46,9 +46,9 @@
 
 (setq-default indent-tabs-mode nil)
 
-(package-install 'js2-mode)
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
-(setq-default js2-basic-offset 2)
+;(package-install 'js2-mode)
+;(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+;(setq-default js2-basic-offset 2)
 
 (setq make-backup-files nil)
 
@@ -61,3 +61,13 @@
 (evil-leader/set-key "c SPC" 'evilnc-comment-or-uncomment-lines)
 
 (setq column-number-mode t)
+
+(defun setup-tide-mode ()
+  (interactive)
+  (tide-setup)
+  (flycheck-mode +1)
+  ;(eldoc-mode +1)
+  (company-mode +1))
+
+(package-install 'tide)
+(add-hook 'typescript-mode-hook #'setup-tide-mode)
