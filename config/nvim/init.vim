@@ -7,7 +7,8 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'Shougo/deoplete.nvim'
 Plug 'kien/ctrlp.vim'
-Plug 'neomake/neomake'
+Plug 'leafgarland/typescript-vim'
+Plug 'mhartington/deoplete-typescript'
 Plug 'scrooloose/nerdtree'
 
 call plug#end()

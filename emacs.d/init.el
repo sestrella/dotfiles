@@ -1,73 +1,16 @@
 (require 'package)
-(add-to-list
-  'package-archives
-  '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
-;(package-refresh-contents)
+(unless package-archive-contents (package-refresh-contents))
 
-(package-install 'evil)
-(evil-mode 1)
+(defvar packages '(evil evil-leader intero neotree))
+(dolist (package packages)
+  (unless (package-installed-p package)
+    (package-install package)))
 
-;(package-install 'intero)
-;(add-hook 'haskell-mode-hook 'intero-mode)
+(defvar settings-dir (expand-file-name "settings" user-emacs-directory))
+(add-to-list 'load-path settings-dir)
 
-(package-install 'flycheck)
-(global-flycheck-mode)
-
-(package-install 'company)
-(global-company-mode)
-
-(menu-bar-mode -1)
-
-(package-install 'neotree)
-(setq neo-smart-open t)
-(add-hook
-  'neotree-mode-hook
-  (lambda ()
-    (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)))
-
-(package-install 'evil-leader)
-(global-evil-leader-mode)
-
-(evil-leader/set-leader ",")
-(evil-leader/set-key "n" 'neotree-toggle)
-
-;(package-install 'flycheck-status-emoji)
-;(eval-after-load
-  ;"flycheck"
-  ;'(add-hook 'flycheck-mode-hook 'flycheck-status-emoji-mode))
-
-(package-install 'color-theme-solarized)
-(set-terminal-parameter nil 'background-mode 'dark)
-(load-theme 'solarized t)
-
-(global-linum-mode t)
-(setq linum-format "%3d ")
-
-(setq-default indent-tabs-mode nil)
-
-;(package-install 'js2-mode)
-;(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
-;(setq-default js2-basic-offset 2)
-
-(setq make-backup-files nil)
-
-(add-to-list 'auto-mode-alist '("zshrc\\'" . sh-mode))
-
-(package-install 'haskell-mode)
-(setq haskell-stylish-on-save t)
-
-(package-install 'evil-nerd-commenter)
-(evil-leader/set-key "c SPC" 'evilnc-comment-or-uncomment-lines)
-
-(setq column-number-mode t)
-
-(defun setup-tide-mode ()
-  (interactive)
-  (tide-setup)
-  (flycheck-mode +1)
-  ;(eldoc-mode +1)
-  (company-mode +1))
-
-(package-install 'tide)
-(add-hook 'typescript-mode-hook #'setup-tide-mode)
+(require 'my-evil-leader)
+(require 'my-evil)
+(require 'my-intero)
