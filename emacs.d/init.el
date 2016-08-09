@@ -11,6 +11,7 @@
 (defvar settings-dir (expand-file-name "settings" user-emacs-directory))
 (add-to-list 'load-path settings-dir)
 
-(require 'my-evil-leader)
 (require 'my-evil)
+(require 'my-evil-leader)
 (require 'my-intero)
+(require 'my-neotree)
