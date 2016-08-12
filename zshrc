@@ -11,27 +11,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-if [[ -d "$HOME/.local/bin" ]]; then
-  export PATH="$HOME/.local/bin:$PATH"
-fi
-
-export VISUAL=vim
-export EDITOR=vim
-
-export TERM='xterm-256color'
-
-alias tas='tmux attach-session -t'
-alias tks='tmux kill-session -t'
-alias tls='tmux list-sessions'
-alias tns='tmux new-session -s'
-alias emacs='emacs -nw'
-
-if [[ -s "$HOME/.nix-profile/etc/profile.d/nix.sh" ]]; then
-  source "$HOME/.nix-profile/etc/profile.d/nix.sh"
-fi
-
-export NVM_DIR="$HOME/.nvm"
-
-if [[ -s "$NVM_DIR/nvm.sh" ]]; then
-  source "$NVM_DIR/nvm.sh"
-fi
+for file in "$HOME/.zsh/*.sh"; do
+  [[ -s "$file" ]] && source $file
+done
