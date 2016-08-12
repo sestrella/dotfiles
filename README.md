@@ -2,17 +2,27 @@
 
 My configuration files.
 
+## Requirements
+
+Install [rcm](https://github.com/thoughtbot/rcm).
+
 ## Installation
 
-Install [rcm](https://github.com/thoughtbot/rcm), then run the following
-commands:
+Clone the repository:
 
 ```
-git clone https://github.com/sestrella/dotfiles.git ~/.dotfiles
-echo 'EXCLUDES=README.md' > ~/.rcrc
-rcup -v
+$ git clone https://github.com/sestrella/dotfiles.git ~/.dotfiles
 ```
 
-## TODO
+Copy the `rcrc` file to your home directory:
 
-- Display CPU and memory usage on tmux status bar
+```
+$ cd ~/.dotfiles
+$ cp rcrc ~/.rcrc
+```
+
+Symlink dotfiles at `~/.dotfiles`:
+
+```
+$ rcup -v
+```
