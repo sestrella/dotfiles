@@ -1,0 +1,10 @@
+---
+- name: Install rbenv
+  git: \
+    repo=https://github.com/rbenv/rbenv \
+    dest=~/.rbenv
+
+- name: Install ruby-build
+  git: \
+    repo=https://github.com/rbenv/ruby-build \
+    dest=~/.rbenv/plugins/ruby-build

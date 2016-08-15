@@ -1,0 +1,8 @@
+---
+- name: Clone dotfiles
+  git: \
+    repo=https://github.com/sestrella/dotfiles \
+    dest=~/.dotfiles
+
+- name: Symlink files
+  command: rcup

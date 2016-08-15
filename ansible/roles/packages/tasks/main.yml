@@ -1,0 +1,25 @@
+---
+- name: Add repositories keys
+  apt_key: id={{ item.id }} keyserver={{ item.keyserver }}
+  with_items:
+    - { id: '575159689BEFB442', keyserver: 'hkp://keyserver.ubuntu.com:80' }
+
+- name: Add repositories
+  apt_repository: repo={{ item }}
+  with_items:
+    - 'deb http://download.fpcomplete.com/ubuntu xenial main'
+    - 'ppa:martin-frost/thoughtbot-rcm'
+    - 'ppa:tmate.io/archive'
+
+- name: Install packages
+  apt: pkg={{ item }} update_cache=yes
+  with_items:
+    - emacs
+    - git
+    - postgresql
+    - rcm
+    - stack
+    - tmate
+    - tmux
+    - vim
+    - zsh
