@@ -1,0 +1,9 @@
+(source gnu)
+(source melpa)
+
+(development
+ (depends-on "evil")
+ (depends-on "evil-leader")
+ (depends-on "intero")
+ (depends-on "neotree")
+ (depends-on "tide"))

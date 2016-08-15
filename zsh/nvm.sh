@@ -1,3 +1,1 @@
-path="$HOME/.nvm/nvm.sh"
-
-[[ -s "$path" ]] && source $path
+source "$HOME/.nvm/nvm.sh"

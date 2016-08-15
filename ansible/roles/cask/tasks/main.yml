@@ -1,0 +1,3 @@
+---
+- name: Clone cask
+  git: repo=https://github.com/cask/cask.git dest=~/.cask
