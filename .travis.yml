@@ -1,0 +1,10 @@
+sudo: required
+
+services:
+  - docker
+
+install:
+  - (cd ansible && make build)
+
+script:
+  - (cd ansible && make run)
