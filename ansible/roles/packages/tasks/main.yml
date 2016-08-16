@@ -27,6 +27,7 @@
     - google-chrome-stable
     - postgresql
     - rcm
+    - silversearcher-ag
     - spotify-client
     - stack
     - tmate
