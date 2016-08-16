@@ -7,4 +7,5 @@
  (depends-on "evil-leader")
  (depends-on "fiplr")
  (depends-on "neotree")
+ (depends-on "projectile")
  (depends-on "tide"))
