@@ -17,11 +17,8 @@
 (global-evil-leader-mode)
 (evil-leader/set-leader ",")
 
-;(require 'ido)
-;(ido-mode t)
-
-;(require 'ido-vertical-mode)
-;(ido-vertical-mode t)
+(require 'ido)
+(ido-mode t)
 
 (require 'fiplr)
 (evil-leader/set-key "p" 'fiplr-find-file)
