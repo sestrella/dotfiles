@@ -2,8 +2,6 @@
 (source melpa)
 
 (development
+ (depends-on "color-theme-solarized")
  (depends-on "evil")
- (depends-on "evil-leader")
- (depends-on "intero")
- (depends-on "neotree")
- (depends-on "tide"))
+ (depends-on "neotree"))
