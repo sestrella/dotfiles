@@ -6,6 +6,9 @@
 (setq linum-format "%3d ")
 (global-linum-mode t)
 
+(require 'company)
+(global-company-mode)
+
 (setq solarized-termcolors 256)
 (set-terminal-parameter nil 'background-mode 'dark)
 (load-theme 'solarized t)
@@ -23,6 +26,9 @@
 (require 'fiplr)
 (evil-leader/set-key "p" 'fiplr-find-file)
 
+(require 'flycheck)
+(global-flycheck-mode)
+
 (require 'neotree)
 (setq neo-smart-open t)
 (evil-leader/set-key "n" 'neotree-toggle)
@@ -32,6 +38,6 @@
 (projectile-global-mode)
 
 (require 'tide)
-(add-hook 'before-save-hook 'tide-format-before-save)
+(add-hook 'typescript-mode-hook 'tide-setup)
 
 (provide 'init)

@@ -3,10 +3,11 @@
 
 (development
  (depends-on "color-theme-solarized")
+ (depends-on "company")
  (depends-on "evil")
  (depends-on "evil-leader")
- (depends-on "grizzl")
  (depends-on "fiplr")
+ (depends-on "grizzl")
  (depends-on "neotree")
  (depends-on "projectile")
  (depends-on "tide"))
