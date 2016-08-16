@@ -3,6 +3,8 @@
 
 (menu-bar-mode -1)
 
+(setq typescript-indent-level 2)
+
 (setq linum-format "%3d ")
 (global-linum-mode t)
 
