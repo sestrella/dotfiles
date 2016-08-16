@@ -3,3 +3,4 @@
   roles:
     - { role: packages, become: yes }
     - tools
+    - dotfiles

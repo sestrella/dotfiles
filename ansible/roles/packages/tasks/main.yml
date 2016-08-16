@@ -1,14 +1,14 @@
 ---
 - name: Add repository keys from key servers
-  apt_key: id={{ item.id }} keyserver={{ item.keyserver }}
+  apt_key: id={{ item }} keyserver='hkp://keyserver.ubuntu.com:80'
   with_items:
-    - { id: '575159689BEFB442', keyserver: 'hkp://keyserver.ubuntu.com:80' }
-    - { id: 'BBEBDCB318AD50EC6865090613B00F1FD2C19886', keyserver: 'hkp://keyserver.ubuntu.com:80' }
+    - '575159689BEFB442'
+    - 'BBEBDCB318AD50EC6865090613B00F1FD2C19886'
 
 - name: Add repository keys from urls
-  apt_key: url={{ item.url }}
+  apt_key: url={{ item }}
   with_items:
-    - { url: 'https://dl-ssl.google.com/linux/linux_signing_key.pub' }
+    - 'https://dl-ssl.google.com/linux/linux_signing_key.pub'
 
 - name: Add repositories
   apt_repository: repo={{ item }}
@@ -31,5 +31,4 @@
     - stack
     - tmate
     - tmux
-    - vim
     - zsh

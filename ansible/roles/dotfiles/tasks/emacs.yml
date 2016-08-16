@@ -1,0 +1,3 @@
+---
+- name: Install emacs plugins
+  command: cask install chdir=~/.emacs.d
