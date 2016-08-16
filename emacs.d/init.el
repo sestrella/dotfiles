@@ -1,9 +1,6 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
-;(autoload 'my-site-start "~/.emacs.d/my-site-start/my-site-start" nil t)
-;(my-site-start "~/.emacs.d/site-start.d")
-
 (menu-bar-mode -1)
 
 (setq linum-format "%3d ")
@@ -18,8 +15,12 @@
 
 (require 'evil-leader)
 (global-evil-leader-mode)
-
 (evil-leader/set-leader ",")
+
+(require 'fiplr)
+(setq fiplr-root-markers '(".git"))
+
+(require 'neotree)
 (evil-leader/set-key "n" 'neotree-toggle)
 
 (require 'tide)
