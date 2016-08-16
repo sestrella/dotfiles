@@ -5,6 +5,7 @@
  (depends-on "color-theme-solarized")
  (depends-on "evil")
  (depends-on "evil-leader")
+ (depends-on "grizzl")
  (depends-on "fiplr")
  (depends-on "neotree")
  (depends-on "projectile")

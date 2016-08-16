@@ -31,6 +31,7 @@
 (evil-leader/set-key "n" 'neotree-toggle)
 
 (require 'projectile)
+(setq projectile-completion-system 'grizzl)
 (projectile-global-mode)
 
 (require 'tide)
