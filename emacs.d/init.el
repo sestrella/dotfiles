@@ -6,11 +6,17 @@
 
 (menu-bar-mode -1)
 
+(setq linum-format "%3d ")
+(global-linum-mode t)
+
 (setq solarized-termcolors 256)
 (set-terminal-parameter nil 'background-mode 'dark)
 (load-theme 'solarized t)
 
 (require 'evil)
 (evil-mode 1)
+
+(require 'tide)
+(add-hook 'before-save-hook 'tide-format-before-save)
 
 (provide 'init)
