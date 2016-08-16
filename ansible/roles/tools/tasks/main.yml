@@ -1,0 +1,5 @@
+---
+- include: cask.yml
+#- include: haskell.yml
+- include: node.yml
+- include: shell.yml

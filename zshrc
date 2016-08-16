@@ -11,6 +11,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-for file in "$HOME/.zsh/*.sh"; do
+for file in $HOME/.zsh/*.sh; do
   [[ -s "$file" ]] && source $file
 done
