@@ -19,6 +19,7 @@
 
 (require 'fiplr)
 (setq fiplr-root-markers '(".git"))
+(evil-leader/set-key "p" 'fiplr-find-file)
 
 (require 'neotree)
 (evil-leader/set-key "n" 'neotree-toggle)
