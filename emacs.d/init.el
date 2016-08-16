@@ -17,12 +17,14 @@
 (global-evil-leader-mode)
 (evil-leader/set-leader ",")
 
-(require 'fiplr)
-(setq fiplr-root-markers '(".git"))
-(evil-leader/set-key "p" 'fiplr-find-file)
+;(require 'ido)
+;(ido-mode t)
 
-(require 'ido)
-(ido-mode t)
+;(require 'ido-vertical-mode)
+;(ido-vertical-mode t)
+
+(require 'fiplr)
+(evil-leader/set-key "p" 'fiplr-find-file)
 
 (require 'neotree)
 (setq neo-smart-open t)
@@ -30,7 +32,6 @@
 
 (require 'projectile)
 (projectile-global-mode)
-;(setq projectile-switch-project-action 'neotree-projectile-action)
 
 (require 'tide)
 (add-hook 'before-save-hook 'tide-format-before-save)
