@@ -4,5 +4,6 @@
 (development
  (depends-on "color-theme-solarized")
  (depends-on "evil")
+ (depends-on "evil-leader")
  (depends-on "neotree")
  (depends-on "tide"))

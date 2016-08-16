@@ -16,6 +16,12 @@
 (require 'evil)
 (evil-mode 1)
 
+(require 'evil-leader)
+(global-evil-leader-mode)
+
+(evil-leader/set-leader ",")
+(evil-leader/set-key "n" 'neotree-toggle)
+
 (require 'tide)
 (add-hook 'before-save-hook 'tide-format-before-save)
 
