@@ -25,6 +25,9 @@
 (require 'ido)
 (ido-mode t)
 
+(require 'fill-column-indicator)
+(add-hook 'after-change-major-mode-hook 'fci-mode)
+
 (require 'fiplr)
 (evil-leader/set-key "p" 'fiplr-find-file)
 

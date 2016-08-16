@@ -6,6 +6,7 @@
  (depends-on "company")
  (depends-on "evil")
  (depends-on "evil-leader")
+ (depends-on "fill-column-indicator" :git "https://github.com/alpaker/Fill-Column-Indicator.git")
  (depends-on "fiplr")
  (depends-on "grizzl")
  (depends-on "neotree")
