@@ -4,6 +4,11 @@
 (require 'neotree)
 (require 'projectile)
 
+(add-hook 'neotree-mode-hook
+	  (lambda()
+	    (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)
+	    (define-key evil-normal-state-local-map (kbd "SPC") 'neotree-enter)))
+
 (evil-leader/set-key "n" 'neotree-toggle)
 (evil-leader/set-key "p" 'projectile-find-file)
 
