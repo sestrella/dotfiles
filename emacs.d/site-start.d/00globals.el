@@ -1,6 +1,10 @@
+(require 'evil-leader)
 (require 'fill-column-indicator)
 (require 'grizzl)
+(require 'neotree)
 (require 'projectile)
+
+(evil-leader/set-key "n" 'neotree-toggle)
 
 (setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))
