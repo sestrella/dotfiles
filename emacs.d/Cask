@@ -10,5 +10,6 @@
  (depends-on "intero")
  (depends-on "my-site-start" :git "https://github.com/tripleee/my-site-start.git")
  (depends-on "neotree")
+ (depends-on "powerline")
  (depends-on "projectile")
  (depends-on "tide"))

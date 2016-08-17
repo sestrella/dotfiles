@@ -2,7 +2,10 @@
 (require 'fill-column-indicator)
 (require 'grizzl)
 (require 'neotree)
+(require 'powerline)
 (require 'projectile)
+
+(powerline-default-theme)
 
 (add-hook 'neotree-mode-hook
 	  (lambda()
