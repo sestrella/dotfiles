@@ -5,6 +5,7 @@
 (require 'projectile)
 
 (evil-leader/set-key "n" 'neotree-toggle)
+(evil-leader/set-key "p" 'projectile-find-file)
 
 (setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))
