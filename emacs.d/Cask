@@ -9,6 +9,7 @@
  (depends-on "grizzl")
  (depends-on "handlebars-mode")
  (depends-on "intero")
+ (depends-on "less-css-mode")
  (depends-on "my-site-start" :git "https://github.com/tripleee/my-site-start.git")
  (depends-on "neotree")
  (depends-on "powerline")
