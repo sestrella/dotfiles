@@ -5,6 +5,7 @@
  (depends-on "color-theme-solarized")
  (depends-on "evil")
  (depends-on "evil-leader")
+ (depends-on "evil-surround")
  (depends-on "fill-column-indicator")
  (depends-on "grizzl")
  (depends-on "handlebars-mode")
