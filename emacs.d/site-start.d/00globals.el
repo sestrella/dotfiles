@@ -5,6 +5,8 @@
 
 (powerline-default-theme)
 
+(setq js-indent-level 2)
+
 (setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))
 
