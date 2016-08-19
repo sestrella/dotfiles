@@ -3,6 +3,8 @@
 (require 'powerline)
 (require 'projectile)
 
+(setq-default indent-tabs-mode nil)
+
 (powerline-default-theme)
 
 (setq js-indent-level 2)
