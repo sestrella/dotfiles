@@ -27,6 +27,7 @@
     - fonts-powerline
     - git
     - google-chrome-stable
+    - libpq-dev
     - postgresql
     - postgresql-contrib
     - rcm
