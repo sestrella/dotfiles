@@ -8,4 +8,6 @@
     dest: ~/.vim/autoload/plug.vim
 
 - name: Install cask
-  git: repo=https://github.com/cask/cask.git dest=~/.cask
+  git:
+    repo: https://github.com/cask/cask.git
+    dest: ~/.cask

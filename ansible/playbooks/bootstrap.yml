@@ -1,6 +1,6 @@
 ---
 - hosts: all
   roles:
-    - shell
+    - editors
           # - { role: packages, become: yes }
           # - editors
