@@ -1,11 +1,11 @@
 ---
-- name: Add repository keys from key servers
+- name: Add repository keys
   apt_key: id={{ item }} keyserver='hkp://keyserver.ubuntu.com:80'
   with_items:
     - '575159689BEFB442'
     - 'BBEBDCB318AD50EC6865090613B00F1FD2C19886'
 
-- name: Add repository keys from urls
+- name: Add repository keys from URLs
   apt_key: url={{ item }}
   with_items:
     - 'https://dl-ssl.google.com/linux/linux_signing_key.pub'
@@ -16,15 +16,14 @@
     - 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main'
     - 'deb http://download.fpcomplete.com/ubuntu xenial main'
     - 'deb http://repository.spotify.com stable non-free'
-    - 'ppa:martin-frost/thoughtbot-rcm'
-    - 'ppa:tmate.io/archive'
+    # BUG: https://github.com/ansible/ansible-modules-core/issues/4282
+    # - 'ppa:martin-frost/thoughtbot-rcm'
+    # - 'ppa:tmate.io/archive'
 
 - name: Install packages
   apt: pkg={{ item }} update_cache=yes
   with_items:
-    - curl
     - emacs
-    - fonts-powerline
     - git
     - google-chrome-stable
     - postgresql
