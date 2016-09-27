@@ -6,6 +6,9 @@
   last = log -1 HEAD
   st = status
 
+[core]
+  excludesfile = ~/.gitignore
+
 [push]
   default = current
 
