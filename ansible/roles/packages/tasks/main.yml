@@ -28,6 +28,7 @@
     - git
     - google-chrome-stable
     - postgresql
+    - postgresql-contrib
     - rcm
     - silversearcher-ag
     - spotify-client
