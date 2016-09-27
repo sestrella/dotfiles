@@ -37,5 +37,9 @@
 (projectile-global-mode)
 (evil-leader/set-key "p" 'projectile-find-file)
 
+(add-to-list 'projectile-other-file-alist '("test.ts" "ts"))
+(add-to-list 'projectile-other-file-alist '("ts" "test.ts"))
+
 (require 'tide)
+(setq typescript-indent-level 2)
 (add-hook 'typescript-mode-hook 'tide-setup)
