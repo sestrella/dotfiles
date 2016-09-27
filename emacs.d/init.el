@@ -12,6 +12,8 @@
 (setq linum-format "%3d ")
 (global-linum-mode t)
 
+(setq-default indent-tabs-mode nil)
+
 (require 'company)
 (global-company-mode)
 
