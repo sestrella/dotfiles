@@ -24,6 +24,7 @@
   apt: pkg={{ item }} update_cache=yes
   with_items:
     - emacs
+    - fonts-powerline
     - git
     - google-chrome-stable
     - postgresql
