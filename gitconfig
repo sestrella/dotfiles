@@ -6,11 +6,6 @@
   last = log -1 HEAD
   st = status
 
-[filter "lfs"]
-  clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
-  required = true
-
 [push]
   default = current
 
