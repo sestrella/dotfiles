@@ -1,0 +1,15 @@
+---
+- name: Install zprezto
+  git: repo=https://github.com/sorin-ionescu/prezto.git \
+       dest=~/.zprezto \
+       recursive=yes
+
+- name: Symlink zprezto files
+  file: src=~/.zprezto/runcoms/{{ item }} \
+        dest=~/.{{ item }} \
+        state=link
+  with_items:
+    - zlogin
+    - zlogout
+    - zprofile
+    - zshenv
