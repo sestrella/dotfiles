@@ -1,6 +1,8 @@
 ---
 - name: Create vim/autoload directory
-  file: path=~/.vim/autoload state=directory
+  file:
+    path: ~/.vim/autoload
+    state: directory
 
 - name: Install vim-plug
   get_url:

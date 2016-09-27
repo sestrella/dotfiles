@@ -1,9 +1,0 @@
----
-- name: Install compiler
-  command: stack setup
-
-- name: Install tools
-  command: stack install {{ item }}
-  with_items:
-    - hlint
-    - stylish-haskell

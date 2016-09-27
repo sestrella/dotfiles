@@ -1,6 +1,0 @@
----
-- include: emacs.yml
-- include: haskell.yml
-- include: node.yml
-- include: ruby.yml
-- include: shell.yml
