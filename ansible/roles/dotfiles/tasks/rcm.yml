@@ -1,3 +1,0 @@
----
-- name: Symlink dotfiles
-  command: rcup -f
