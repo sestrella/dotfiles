@@ -45,3 +45,6 @@
 (require 'tide)
 (setq typescript-indent-level 2)
 (add-hook 'typescript-mode-hook 'tide-setup)
+
+(require 'intero)
+(add-hook 'haskell-mode-hook 'intero-mode)
