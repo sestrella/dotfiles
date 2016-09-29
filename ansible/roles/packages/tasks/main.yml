@@ -27,6 +27,7 @@
     - fonts-powerline
     - git
     - google-chrome-stable
+    - htop
     - libncurses5-dev
     - libpq-dev
     - postgresql
