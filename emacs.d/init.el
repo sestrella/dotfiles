@@ -8,6 +8,9 @@
 
 (setq vc-follow-symlinks t)
 
+(defvar js-indent-level)
+(setq js-indent-level 2)
+
 (defvar solarized-termcolors)
 (setq solarized-termcolors 256)
 (set-terminal-parameter nil 'background-mode 'dark)
