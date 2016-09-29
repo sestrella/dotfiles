@@ -5,5 +5,5 @@
 - name: Install Haskell tools
   command: stack install {{ item }}
   with_items:
+    - hlint
     - stylish-haskell
-    - tslint
