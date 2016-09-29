@@ -8,6 +8,8 @@
 
 (setq vc-follow-symlinks t)
 
+(add-to-list 'auto-mode-alist '("\\zshrc\\'" . shell-script-mode))
+
 (defvar js-indent-level)
 (setq js-indent-level 2)
 

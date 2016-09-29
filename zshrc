@@ -26,5 +26,5 @@ alias tks='tmux kill-session -t'
 alias tls='tmux list-sessions'
 alias tns='tmux new-session -s'
 
-[[ -s "~/.rbenv/bin/rbenv" ]] && eval "$(rbenv init -)"
+[[ -s "$HOME/.rbenv/bin/rbenv" ]] && eval "$(rbenv init -)"
 [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
