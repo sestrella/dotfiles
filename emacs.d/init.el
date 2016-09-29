@@ -1,3 +1,6 @@
+;;; package --- Summary
+;;; Commentary:
+;;; Code:
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
@@ -5,10 +8,12 @@
 
 (setq vc-follow-symlinks t)
 
+(defvar solarized-termcolors)
 (setq solarized-termcolors 256)
 (set-terminal-parameter nil 'background-mode 'dark)
 (load-theme 'solarized t)
 
+(defvar linum-format)
 (setq linum-format "%3d ")
 (global-linum-mode t)
 
@@ -48,3 +53,6 @@
 
 (require 'intero)
 (add-hook 'haskell-mode-hook 'intero-mode)
+
+(provide 'init)
+;;; init.el ends here
