@@ -19,6 +19,9 @@
 
 (setq-default indent-tabs-mode nil)
 
+(require 'whitespace)
+(global-whitespace-mode)
+
 (require 'company)
 (global-company-mode)
 
