@@ -12,4 +12,5 @@
  (depends-on "intero")
  (depends-on "neotree")
  (depends-on "projectile")
+ (depends-on "yaml-mode")
  (depends-on "tide"))
