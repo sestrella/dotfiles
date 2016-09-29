@@ -1,0 +1,9 @@
+---
+- name: Install Haskell compiler
+  command: stack setup
+
+- name: Install Haskell tools
+  command: stack install {{ item }}
+  with_items:
+    - stylish-haskell
+    - tslint
