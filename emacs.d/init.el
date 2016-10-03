@@ -62,5 +62,10 @@
 (require 'intero)
 (add-hook 'haskell-mode-hook 'intero-mode)
 
+(add-hook
+ 'haskell-mode-hook
+ (lambda()
+   (add-hook 'before-save-hook 'haskell-mode-stylish-buffer)))
+
 (provide 'init)
 ;;; init.el ends here
