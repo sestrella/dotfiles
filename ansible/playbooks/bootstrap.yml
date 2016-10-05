@@ -4,4 +4,4 @@
     - { role: packages, become: yes }
     - editors
     - shell
-    - version-managers
+    - managers
