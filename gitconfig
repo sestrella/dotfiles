@@ -12,6 +12,9 @@
 [push]
   default = current
 
+[rerere]
+  enabled = true
+
 [user]
   email = sebas007estrella@gmail.com
   name = Sebastián Estrella
