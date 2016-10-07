@@ -1,1 +1,1 @@
-EXCLUDES="ansible README.md"
+EXCLUDES="ansible LICENSE.md README.md"
