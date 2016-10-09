@@ -67,5 +67,9 @@
  (lambda()
    (add-hook 'before-save-hook 'haskell-mode-stylish-buffer)))
 
+(require 'helm)
+(helm-mode 1)
+(global-set-key (kbd "M-x") 'helm-M-x)
+
 (provide 'init)
 ;;; init.el ends here
