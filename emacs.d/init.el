@@ -71,5 +71,8 @@
 (helm-mode 1)
 (global-set-key (kbd "M-x") 'helm-M-x)
 
+(require 'powerline)
+(powerline-default-theme)
+
 (provide 'init)
 ;;; init.el ends here
