@@ -4,6 +4,8 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 (menu-bar-mode -1)
 
 (setq vc-follow-symlinks t)
