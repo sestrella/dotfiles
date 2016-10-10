@@ -74,5 +74,8 @@
 (require 'powerline)
 (powerline-default-theme)
 
+(require 'evil-surround)
+(global-evil-surround-mode 1)
+
 (provide 'init)
 ;;; init.el ends here

@@ -6,6 +6,7 @@
  (depends-on "company")
  (depends-on "evil")
  (depends-on "evil-leader")
+ (depends-on "evil-surround")
  (depends-on "flycheck")
  (depends-on "grizzl")
  (depends-on "handlebars-mode")
