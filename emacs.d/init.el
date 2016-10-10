@@ -79,5 +79,10 @@
 (require 'evil-surround)
 (global-evil-surround-mode 1)
 
+(require 'evil-nerd-commenter)
+(evilnc-default-hotkeys)
+
+(global-hl-line-mode)
+
 (provide 'init)
 ;;; init.el ends here
