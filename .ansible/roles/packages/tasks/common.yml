@@ -11,6 +11,7 @@
     - libmysqlclient-dev
     - libpcre3-dev
     - libpq-dev
+    - libsqlite3-dev
     - postgresql
     - silversearcher-ag
     - tmux
