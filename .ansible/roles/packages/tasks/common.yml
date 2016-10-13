@@ -3,12 +3,12 @@
   apt: pkg={{ item }} update_cache=yes
   with_items:
     # - libncurses5-dev
-    # - libpq-dev
     # - postgresql-contrib
     - emacs
     - fonts-powerline
     - git
     - htop
+    - libpq-dev
     - postgresql
     - silversearcher-ag
     - tmux
