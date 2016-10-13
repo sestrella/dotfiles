@@ -6,8 +6,6 @@ My configuration files.
 
 ## Getting started
 
-Install [rcm](https://github.com/thoughtbot/rcm).
-
 Clone the repository:
 
 ```
@@ -21,7 +19,8 @@ $ cd ~/.dotfiles
 $ cp rcrc ~/.rcrc
 ```
 
-Symlink dotfiles at `~/.dotfiles`:
+Install [rcm](https://github.com/thoughtbot/rcm), symlink dotfiles at
+`~/.dotfiles`:
 
 ```
 $ rcup -v
