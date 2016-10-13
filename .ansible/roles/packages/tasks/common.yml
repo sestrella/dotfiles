@@ -8,6 +8,7 @@
     - fonts-powerline
     - git
     - htop
+    - libpcre3-dev
     - libpq-dev
     - postgresql
     - silversearcher-ag
