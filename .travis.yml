@@ -1,9 +1,9 @@
 language: c
 
 install:
-  - sudo apt-add-repository ppa:ansible/ansible
+  - sudo apt-add-repository -y ppa:ansible/ansible
   - sudo apt-get update
-  - udo apt-get install -y ansible
+  - sudo apt-get install -y ansible
 
 script:
-  - cd .ansible && make
+  - cd .ansible && make test

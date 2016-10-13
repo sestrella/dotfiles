@@ -6,3 +6,6 @@ managers:
 
 packages:
 	ansible-playbook --ask-sudo-pass playbooks/packages.yml
+
+test:
+	ansible-playbook playbooks/bootstrap.yml
