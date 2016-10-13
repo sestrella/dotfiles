@@ -6,4 +6,4 @@ install:
   - udo apt-get install -y ansible
 
 script:
-  - cd ansible && make
+  - cd .ansible && make
