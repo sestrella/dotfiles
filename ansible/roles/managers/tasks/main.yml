@@ -1,34 +1,3 @@
-- name: Install nvm
-  git:
-    repo: https://github.com/creationix/nvm.git
-    dest: ~/.nvm
-
-- name: Install rbenv
-  git:
-    repo: https://github.com/rbenv/rbenv.git
-    dest: ~/.rbenv
-
-- name: Install ruby-build
-  git:
-    repo: https://github.com/rbenv/ruby-build.git
-    dest: ~/.rbenv/plugins/ruby-build
-
-- name: Install tpm
-  git:
-    repo: https://github.com/tmux-plugins/tpm
-    dest: ~/.tmux/plugins/tpm
-
-- name: Create vim/autoload directory
-  file:
-    path: ~/.vim/autoload
-    state: directory
-
-- name: Install vim-plug
-  get_url:
-    url: https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    dest: ~/.vim/autoload/plug.vim
-
-- name: Install cask
-  git:
-    repo: https://github.com/cask/cask.git
-    dest: ~/.cask
+---
+- include: package.yml
+- include: version.yml

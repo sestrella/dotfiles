@@ -8,6 +8,11 @@ Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
+set expandtab
+set number
+set shiftwidth=2
+set tabstop=2
+
 let mapleader = ","
 
 let g:ctrlp_map = '<leader>p'

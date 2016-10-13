@@ -1,42 +1,7 @@
----
-- name: Add repository keys
-  apt_key: id={{ item }} keyserver='hkp://keyserver.ubuntu.com:80'
-  with_items:
-    - '575159689BEFB442'
-    - 'BBEBDCB318AD50EC6865090613B00F1FD2C19886'
-
-- name: Add repository keys from URLs
-  apt_key: url={{ item }}
-  with_items:
-    - 'https://dl-ssl.google.com/linux/linux_signing_key.pub'
-
-- name: Add repositories
-  apt_repository: repo={{ item }}
-  with_items:
-    - 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main'
-    - 'deb http://download.fpcomplete.com/ubuntu xenial main'
-    - 'deb http://repository.spotify.com stable non-free'
-    # BUG: https://github.com/ansible/ansible-modules-core/issues/4282
-    # - 'ppa:martin-frost/thoughtbot-rcm'
-    # - 'ppa:tmate.io/archive'
-
-- name: Install packages
-  apt: pkg={{ item }} update_cache=yes
-  with_items:
-    - emacs
-    - fonts-powerline
-    - git
-    - google-chrome-stable
-    - htop
-    - libncurses5-dev
-    - libpq-dev
-    - postgresql
-    - postgresql-contrib
-    - rcm
-    - silversearcher-ag
-    - spotify-client
-    - stack
-    - tmate
-    - tmux
-    - tree
-    - zsh
+- include: common.yml
+- include: google-chrome.yml
+- include: rcm.yml
+- include: slack.yml
+- include: spotify.yml
+- include: stack.yml
+- include: tmate.yml

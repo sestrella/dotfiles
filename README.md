@@ -1,12 +1,12 @@
 # dotfiles
 
+[![Build Status](https://travis-ci.org/sestrella/dotfiles.svg?branch=master)](https://travis-ci.org/sestrella/dotfiles)
+
 My configuration files.
 
-## Requirements
+## Getting started
 
 Install [rcm](https://github.com/thoughtbot/rcm).
-
-## Installation
 
 Clone the repository:
 

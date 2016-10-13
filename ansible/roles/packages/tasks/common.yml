@@ -1,0 +1,19 @@
+---
+- name: Install packages
+  apt: pkg={{ item }} update_cache=yes
+  with_items:
+    # - libncurses5-dev
+    # - libpq-dev
+    # - postgresql-contrib
+    # - silversearcher-ag
+    - emacs
+    - fonts-powerline
+    - git
+    - htop
+    - postgresql
+    - tmux
+    - tree
+    - zsh
+  tags:
+    - common
+

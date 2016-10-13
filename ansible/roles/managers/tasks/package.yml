@@ -1,0 +1,16 @@
+---
+- name: package - Install managers
+  git: repo={{ item.repo }} dest={{ item.dest }}
+  with_items:
+    - { repo: 'https://github.com/cask/cask.git', dest: '~/.cask' }
+    - { repo: 'https://github.com/tmux-plugins/tpm', dest: '~/.tmux/plugins/tpm' }
+
+- name: package - Create ~/.vim/autoload directory
+  file:
+    path: '~/.vim/autoload'
+    state: directory 
+
+- name: package - Install vim-plug
+  get_url:
+    url: 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    dest: '~/.vim/autoload/plug.vim'
