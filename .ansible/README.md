@@ -1,6 +1,10 @@
-# Ansible
+# Playbooks
+
+My ansible playbooks.
 
 ## Getting started
+
+Run bootstrap playbook:
 
 ```
 $ ansible-playbook --ask-sudo-pass playbooks/bootstrap.yml
@@ -11,7 +15,7 @@ $ ansible-playbook --ask-sudo-pass playbooks/bootstrap.yml
 Install packages:
 
 ```
-$ ansible-playbook playbooks/packages.yml
+$ ansible-playbook --ask-sudo-pass playbooks/packages.yml
 ```
 
 Install package/version managers:
