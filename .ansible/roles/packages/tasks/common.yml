@@ -16,6 +16,7 @@
     - silversearcher-ag
     - tmux
     - tree
+    - vim
     - xclip
     - zsh
   tags:
