@@ -5,14 +5,15 @@
     # - libncurses5-dev
     # - libpq-dev
     # - postgresql-contrib
-    # - silversearcher-ag
     - emacs
     - fonts-powerline
     - git
     - htop
     - postgresql
+    - silversearcher-ag
     - tmux
     - tree
+    - xclip
     - zsh
   tags:
     - common
