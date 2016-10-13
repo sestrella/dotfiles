@@ -1,4 +1,5 @@
 - include: common.yml
+- include: docker.yml
 - include: google-chrome.yml
 - include: rcm.yml
 - include: slack.yml
