@@ -12,6 +12,7 @@
     - libpcre3-dev
     - libpq-dev
     - libsqlite3-dev
+    - pkg-config
     - postgresql
     - silversearcher-ag
     - tmux
