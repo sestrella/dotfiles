@@ -22,3 +22,5 @@
 - name: docker - Create group
   group:
     name: docker
+  tags:
+    - docker
