@@ -2,8 +2,6 @@
 - name: Install packages
   apt: pkg={{ item }} update_cache=yes
   with_items:
-    # - libncurses5-dev
-    # - postgresql-contrib
     - emacs
     - fonts-powerline
     - git
@@ -18,6 +16,7 @@
     - tmux
     - tree
     - vim
+    - virtualbox
     - xclip
     - zsh
   tags:
