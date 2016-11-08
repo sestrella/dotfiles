@@ -17,7 +17,6 @@
     - tmux
     - tree
     - vim
-    - virtualbox
     - xclip
     - zsh
   tags:
