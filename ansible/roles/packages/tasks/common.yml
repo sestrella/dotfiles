@@ -17,6 +17,7 @@
     - tmux
     - tree
     - vim
+    - whois
     - xclip
     - zsh
   tags:
