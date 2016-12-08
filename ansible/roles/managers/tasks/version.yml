@@ -1,7 +1,0 @@
----
-- name: version - Install managers
-  git: repo={{ item.repo }} dest={{ item.dest }}
-  with_items:
-    - { repo: 'https://github.com/creationix/nvm.git', dest: '~/.nvm' }
-    - { repo: 'https://github.com/rbenv/rbenv.git', dest: '~/.rbenv' }
-    - { repo: 'https://github.com/rbenv/ruby-build.git', dest: '~/.rbenv/plugins/ruby-build' }

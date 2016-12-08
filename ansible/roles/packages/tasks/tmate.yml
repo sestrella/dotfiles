@@ -1,9 +1,0 @@
----
-- name: tmate - Add repository
-  apt_repository:
-    repo: 'ppa:tmate.io/archive'
-
-- name: tmate - Install package
-  apt:
-    pkg: tmate
-    update_cache: yes

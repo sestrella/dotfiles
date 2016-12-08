@@ -1,4 +1,0 @@
----
-- name: slack - Install package
-  apt:
-    deb: 'https://downloads.slack-edge.com/linux_releases/slack-desktop-2.2.1-amd64.deb'

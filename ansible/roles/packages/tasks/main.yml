@@ -1,8 +1,0 @@
-- include: common.yml
-- include: docker.yml
-- include: google-chrome.yml
-- include: rcm.yml
-- include: slack.yml
-- include: spotify.yml
-- include: stack.yml
-- include: tmate.yml
