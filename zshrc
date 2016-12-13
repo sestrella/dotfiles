@@ -26,5 +26,7 @@ alias tks='tmux kill-session -t'
 alias tls='tmux list-sessions'
 alias tns='tmux new-session -s'
 
+alias drm="docker ps -a | grep Exited | awk '{ print $1 }' | xargs docker rm"
+
 [[ -s "$HOME/.rbenv/bin/rbenv" ]] && eval "$(rbenv init -)"
 [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
