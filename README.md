@@ -1,8 +1,10 @@
 # dotfiles
 
-[![Build Status](https://travis-ci.org/sestrella/dotfiles.svg?branch=master)](https://travis-ci.org/sestrella/dotfiles)
-
 My configuration files.
+
+## Requirements
+
+- Install [rcm](https://github.com/thoughtbot/rcm).
 
 ## Getting started
 
@@ -19,9 +21,12 @@ $ cd ~/.dotfiles
 $ cp rcrc ~/.rcrc
 ```
 
-Install [rcm](https://github.com/thoughtbot/rcm), symlink dotfiles at
-`~/.dotfiles`:
+Symlink all dotfiles:
 
 ```
 $ rcup -v
 ```
+
+## License
+
+Licensed under the MIT License.
