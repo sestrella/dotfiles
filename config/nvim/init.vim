@@ -6,6 +6,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'neomake/neomake'
 Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 
 call plug#end()
