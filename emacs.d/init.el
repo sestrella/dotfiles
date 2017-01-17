@@ -1,88 +1,33 @@
-;;; package --- Summary
-;;; Commentary:
-;;; Code:
-(require 'cask "~/.cask/cask.el")
-(cask-initialize)
+(require 'package)
+(setq package-enable-at-startup nil)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+(package-initialize)
 
-(defalias 'yes-or-no-p 'y-or-n-p)
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 
-(menu-bar-mode -1)
+(eval-when-compile
+  (require 'use-package))
 
-(setq vc-follow-symlinks t)
+(use-package evil
+  :ensure t
+  :config (evil-mode 1))
 
-(add-to-list 'auto-mode-alist '("\\zshrc\\'" . shell-script-mode))
+(use-package color-theme-solarized
+  :ensure t
+  :init
+    (setq color-themes '())
+    (customize-set-variable 'frame-background-mode 'dark)
+  :config (load-theme 'solarized t))
 
-(defvar js-indent-level)
-(setq js-indent-level 2)
+(use-package flycheck
+  :ensure t
+  :config (global-flycheck-mode))
 
-(defvar solarized-termcolors)
-(setq solarized-termcolors 256)
-(set-terminal-parameter nil 'background-mode 'dark)
-(load-theme 'solarized t)
+(use-package company
+  :ensure t
+  :config (global-company-mode))
 
-(defvar linum-format)
-(setq linum-format "%3d ")
-(global-linum-mode t)
-
-(setq-default indent-tabs-mode nil)
-
-(require 'whitespace)
-(global-whitespace-mode)
-
-(require 'company)
-(global-company-mode)
-
-(require 'evil)
-(evil-mode 1)
-
-(require 'evil-leader)
-(evil-leader/set-leader ",")
-(global-evil-leader-mode)
-
-(require 'flycheck)
-(global-flycheck-mode)
-
-(require 'neotree)
-(evil-leader/set-key "n" 'neotree-toggle)
-(add-hook
- 'neotree-mode-hook
- (lambda()
-   (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)))
-
-(require 'projectile)
-(setq projectile-completion-system 'grizzl)
-(projectile-global-mode)
-(evil-leader/set-key "p" 'projectile-find-file)
-
-(add-to-list 'projectile-other-file-alist '("test.ts" "ts"))
-(add-to-list 'projectile-other-file-alist '("ts" "test.ts"))
-
-(require 'tide)
-(setq typescript-indent-level 2)
-(add-hook 'typescript-mode-hook 'tide-setup)
-
-(require 'intero)
-(add-hook 'haskell-mode-hook 'intero-mode)
-
-(add-hook
- 'haskell-mode-hook
- (lambda()
-   (add-hook 'before-save-hook 'haskell-mode-stylish-buffer)))
-
-(require 'helm)
-(helm-mode 1)
-(global-set-key (kbd "M-x") 'helm-M-x)
-
-(require 'powerline)
-(powerline-default-theme)
-
-(require 'evil-surround)
-(global-evil-surround-mode 1)
-
-(require 'evil-nerd-commenter)
-(evilnc-default-hotkeys)
-
-(global-hl-line-mode)
-
-(provide 'init)
-;;; init.el ends here
+(use-package tide
+  :init (add-hook 'typescript-mode-hook #'tide-setup))
