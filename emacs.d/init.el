@@ -7,6 +7,9 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
+(menu-bar-mode -1)
+(global-linum-mode 1)
+
 (eval-when-compile
   (require 'use-package))
 
