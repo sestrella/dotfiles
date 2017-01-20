@@ -1,0 +1,30 @@
+---
+- name: Install zsh
+  apt:
+    name: zsh
+    state: present
+  become: yes
+
+- name: Change user shell
+  user:
+    name: "{{ ansible_user_id }}"
+    shell: /bin/zsh
+  become: yes
+
+- name: Install zprezto
+  git:
+    repo: https://github.com/sorin-ionescu/prezto.git
+    dest: ~/.zprezto
+
+- name: Symlink zprezto configuration files
+  file:
+    src: "~/.zprezto/runcoms/{{ item }}"
+    dest: "~/.{{ item }}"
+    state: link
+  with_items:
+    - zlogin
+    - zlogout
+    - zpreztorc
+    - zprofile
+    - zshenv
+    - zshrc

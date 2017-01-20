@@ -1,0 +1,28 @@
+---
+- name: Add repository key
+  apt_key:
+    id: 58118E89F3A912897C070ADBF76221572C52609D
+    keyserver: hkp://keyserver.ubuntu.com:80
+    state: present
+  become: yes
+
+- name: Add repository
+  apt_repository:
+    repo: deb https://apt.dockerproject.org/repo ubuntu-xenial main
+    filename: docker
+    state: present
+  become: yes
+
+- name: Install package
+  apt:
+    name: docker-engine
+    update_cache: yes
+    state: present
+  become: yes
+
+- name: Add group to user
+  user:
+    name: "{{ ansible_user_id }}"
+    groups: docker
+    append: yes
+  become: yes

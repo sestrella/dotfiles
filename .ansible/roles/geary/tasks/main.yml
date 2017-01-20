@@ -1,0 +1,6 @@
+---
+- name: Install package
+  apt:
+    name: geary
+    state: present
+  become: yes
