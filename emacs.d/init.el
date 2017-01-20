@@ -7,30 +7,10 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-(menu-bar-mode -1)
-(global-linum-mode 1)
+(add-to-list 'load-path "~/.emacs.d/lisp")
 
-(eval-when-compile
-  (require 'use-package))
+(require 'init-evil)
+(require 'init-flycheck)
+(require 'init-solarized)
 
-(use-package evil
-  :ensure t
-  :config (evil-mode 1))
-
-(use-package color-theme-solarized
-  :ensure t
-  :init
-    (setq color-themes '())
-    (customize-set-variable 'frame-background-mode 'dark)
-  :config (load-theme 'solarized t))
-
-(use-package flycheck
-  :ensure t
-  :config (global-flycheck-mode))
-
-(use-package company
-  :ensure t
-  :config (global-company-mode))
-
-(use-package tide
-  :init (add-hook 'typescript-mode-hook #'tide-setup))
+(provide 'init)
