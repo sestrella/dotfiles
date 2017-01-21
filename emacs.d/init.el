@@ -14,7 +14,9 @@
 
 (require 'init-company)
 (require 'init-evil)
+(require 'init-evil-leader)
 (require 'init-flycheck)
+(require 'init-neotree)
 (require 'init-solarized)
 (require 'init-tide)
 
