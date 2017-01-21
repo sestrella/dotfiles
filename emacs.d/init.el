@@ -19,6 +19,7 @@
 (require 'init-evil)
 (require 'init-evil-leader)
 (require 'init-flycheck)
+(require 'init-intero)
 (require 'init-neotree)
 (require 'init-projectile)
 (require 'init-solarized)
