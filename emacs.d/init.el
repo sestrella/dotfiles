@@ -23,6 +23,7 @@
 (require 'init-flycheck)
 (require 'init-intero)
 (require 'init-neotree)
+(require 'init-powerline)
 (require 'init-projectile)
 (require 'init-solarized)
 (require 'init-tide)
