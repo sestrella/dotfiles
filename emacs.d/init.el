@@ -9,6 +9,8 @@
 (setq linum-format "%3d ")
 (global-linum-mode t)
 
+(add-to-list 'auto-mode-alist '("\\zshrc\\'" . sh-mode))
+
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
