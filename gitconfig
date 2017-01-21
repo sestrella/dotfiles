@@ -3,18 +3,14 @@
   ci = commit
   co = checkout
   df = diff
-  last = log -1 HEAD
   st = status
 
-[core]
-  excludesfile = ~/.gitignore
-
 [push]
-  default = current
+  default = simple
 
 [rerere]
   enabled = true
 
 [user]
-  email = sebas007estrella@gmail.com
   name = Sebastián Estrella
+  email = sebas007estrella@gmail.com
