@@ -1,14 +1,17 @@
 (require 'package)
 (setq package-enable-at-startup nil)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+(add-to-list 'package-archives
+	     '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
+
+(menu-bar-mode -1)
+
+(setq linum-format "%3d ")
+(global-linum-mode t)
 
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
-
-(global-linum-mode t)
-(menu-bar-mode -1)
 
 (add-to-list 'load-path "~/.emacs.d/lisp")
 
