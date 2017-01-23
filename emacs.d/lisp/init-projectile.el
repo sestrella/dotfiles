@@ -1,5 +1,7 @@
 (use-package projectile
-  :config (projectile-mode)
+  :config
+  (eval-after-load 'evil-leader
+    (evil-leader/set-key "f" 'projectile-find-file))
   :diminish projectile-mode
   :ensure t)
 

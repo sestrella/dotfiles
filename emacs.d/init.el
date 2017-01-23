@@ -10,13 +10,15 @@
 (setq linum-format "%3d ")
 (global-linum-mode t)
 
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+
 (add-to-list 'auto-mode-alist '("\\zshrc\\'" . sh-mode))
 
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
 
-(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+(add-to-list 'load-path "~/.emacs.d/lisp")
 
 (require 'init-company)
 (require 'init-evil)
