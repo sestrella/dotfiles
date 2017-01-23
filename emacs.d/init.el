@@ -31,5 +31,6 @@
 (require 'init-projectile)
 (require 'init-solarized)
 (require 'init-tide)
+(require 'init-whitespace)
 
 (provide 'init)
