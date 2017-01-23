@@ -4,6 +4,8 @@
 	     '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
 
+(setq vc-follow-symlinks t)
+
 (menu-bar-mode -1)
 
 (setq linum-format "%3d ")
