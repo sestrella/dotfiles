@@ -22,6 +22,7 @@
 (require 'init-company)
 (require 'init-evil)
 (require 'init-evil-leader)
+(require 'init-evil-magit)
 (require 'init-evil-surround)
 (require 'init-flycheck)
 (require 'init-intero)
