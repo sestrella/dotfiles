@@ -1,6 +1,7 @@
 ---
 - hosts: all
   roles:
+    - libraries
     - rcm
     - tmux
     - touchpad-indicator
