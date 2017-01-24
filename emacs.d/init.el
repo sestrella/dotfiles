@@ -10,6 +10,8 @@
 (setq linum-format "%3d ")
 (global-linum-mode t)
 
+(setq typescript-indent-level 2)
+
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
 
 (add-to-list 'auto-mode-alist '("\\zshrc\\'" . sh-mode))
