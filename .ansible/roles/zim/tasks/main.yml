@@ -5,11 +5,8 @@
     dest: ~/.zim
     recursive: yes
 
-- name: Symlink files
+- name: Symlink file
   file:
-    src: "~/.zim/templates/{{ item }}"
-    dest: "~/.{{ item }}"
+    src: ~/.zim/templates/zlogin
+    dest: ~/.zlogin
     state: link
-  with_items:
-    - zlogin
-    - zshrc
