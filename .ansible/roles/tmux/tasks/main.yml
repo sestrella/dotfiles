@@ -9,9 +9,3 @@
   git:
     repo: https://github.com/tmux-plugins/tpm.git
     dest: ~/.tmux/plugins/tpm
-
-- name: Symlink configuration file
-  file:
-    src: "{{ role_path }}/files/tmux.conf"
-    dest: ~/.tmux.conf
-    state: link
