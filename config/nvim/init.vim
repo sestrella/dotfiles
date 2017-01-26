@@ -1,14 +1,18 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug 'Quramy/tsuquyomi'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'altercation/vim-colors-solarized'
 Plug 'eagletmt/neco-ghc'
 Plug 'kien/ctrlp.vim'
+Plug 'leafgarland/typescript-vim'
 Plug 'nbouscal/vim-stylish-haskell'
 Plug 'neomake/neomake'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-syntastic/syntastic'
 
 call plug#end()
 
@@ -47,6 +51,11 @@ autocmd! BufRead,BufWritePost * Neomake
 let NERDTreeShowHidden=1
 
 map <Leader>n :NERDTreeToggle<CR>
+" }}}
+
+" tsuquyomi {{{
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi']
 " }}}
 
 " solarized {{{
