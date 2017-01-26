@@ -10,3 +10,6 @@ fi
 for f in "$HOME/.zsh/"init-*.sh; do
   source $f
 done
+
+# stack
+export PATH="$HOME/.local/bin:$PATH"
