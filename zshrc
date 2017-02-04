@@ -7,9 +7,6 @@ if [[ -s ${ZDOTDIR:-${HOME}}/.zim/init.zsh ]]; then
   source ${ZDOTDIR:-${HOME}}/.zim/init.zsh
 fi
 
-for f in "$HOME/.zsh/"init-*.sh; do
+for f in "$HOME/.zsh/"init-*.zsh; do
   source $f
 done
-
-# stack
-export PATH="$HOME/.local/bin:$PATH"
