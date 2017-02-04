@@ -31,6 +31,7 @@
 
 (require 'init-evil)
 (require 'init-evil-leader)
+(require 'init-evil-commentary)
 
 (require 'init-neotree)
 (require 'init-powerline)
