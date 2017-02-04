@@ -30,8 +30,9 @@
 (setq version-control t)
 
 (require 'init-evil)
-(require 'init-evil-leader)
 (require 'init-evil-commentary)
+(require 'init-evil-leader)
+(require 'init-evil-surround)
 
 (require 'init-neotree)
 (require 'init-powerline)
