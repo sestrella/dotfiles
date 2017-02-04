@@ -1,7 +1,5 @@
 (use-package color-theme-solarized
-  :init
-    (setq color-themes '())
-    (customize-set-variable 'frame-background-mode 'dark)
+  :init (setq color-themes '())
   :config (load-theme 'solarized t)
   :ensure t)
 

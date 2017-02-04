@@ -1,39 +1,46 @@
 (require 'package)
 (setq package-enable-at-startup nil)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
-
-(setq vc-follow-symlinks t)
-
-(menu-bar-mode -1)
-
-(setq linum-format "%3d ")
-(global-linum-mode t)
-
-(setq typescript-indent-level 2)
-
-(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
-
-(add-to-list 'auto-mode-alist '("\\zshrc\\'" . sh-mode))
 
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
 
+(setq-default indent-tabs-mode nil)
+
+(setq js-indent-level 2)
+(setq typescript-indent-level 2)
+
+(menu-bar-mode -1)
+
+(setq linum-format "%3d ")
+(global-linum-mode)
+
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 (add-to-list 'load-path "~/.emacs.d/lisp")
 
-(require 'init-company)
+(setq backup-by-copying t)
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+(setq delete-old-versions t)
+(setq kept-new-versions 6)
+(setq kept-old-versions 2)
+(setq version-control t)
+
 (require 'init-evil)
 (require 'init-evil-leader)
-(require 'init-evil-magit)
-(require 'init-evil-surround)
-(require 'init-flycheck)
-(require 'init-helm-projectile)
-(require 'init-intero)
+
 (require 'init-neotree)
 (require 'init-powerline)
+(require 'init-projectile)
 (require 'init-solarized)
-(require 'init-tide)
 (require 'init-whitespace)
+
+(require 'init-company)
+(require 'init-flycheck)
+
+(require 'init-tide)
 
 (provide 'init)
