@@ -29,8 +29,8 @@
 (setq kept-old-versions 2)
 (setq version-control t)
 
-(add-to-list 'auto-mode-alist '("\\.zsh\\'" . shell-script-mode))
-(add-to-list 'auto-mode-alist '("\\zshrc\\'" . shell-script-mode))
+(add-to-list 'auto-mode-alist '("\\.zsh$" . shell-script-mode))
+(add-to-list 'auto-mode-alist '("\\zshrc$" . shell-script-mode))
 
 (require 'init-evil)
 (require 'init-evil-commentary)
