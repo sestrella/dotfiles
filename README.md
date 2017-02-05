@@ -6,7 +6,7 @@ My configuration files.
 
 - Install [rcm](https://github.com/thoughtbot/rcm).
 
-## Getting started
+## Getting Started
 
 Clone the repository:
 
