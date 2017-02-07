@@ -48,5 +48,6 @@
 
 (require 'init-markdown)
 (require 'init-tide)
+(require 'init-yaml)
 
 (provide 'init)
