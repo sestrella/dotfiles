@@ -54,12 +54,23 @@ zprompt_theme='minimal'
 #setopt CORRECT
 
 #
+# Environment
+#
+
+# Set the string below to the desired terminal title format string.
+# The terminal title is redrawn upon directory change, however, variables like
+# ${PWD} are only evaluated once. Use prompt expansion strings for dynamic data:
+#   http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Simple-Prompt-Escapes
+# The example below uses the following format: 'username@host:/current/directory'
+ztermtitle='%n@%m:%~'
+
+#
 # Input
 #
 
 # Uncomment to enable double-dot expansion.
 # This appends '../' to your input for each '.' you type after an initial '..'
-zdouble_dot_expand='true'
+#zdouble_dot_expand='true'
 
 #
 # Syntax-Highlighting
@@ -70,7 +81,7 @@ zdouble_dot_expand='true'
 #   https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters.md
 # For (u)rxvt, termite and gnome-terminal users,
 # removing the 'cursor' highlighter will fix the disappearing cursor problem
-zhighlighters=(main brackets)
+zhighlighters=(main brackets cursor)
 
 
 #
