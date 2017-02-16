@@ -46,6 +46,7 @@
 (require 'init-company)
 (require 'init-flycheck)
 
+(require 'init-intero)
 (require 'init-markdown)
 (require 'init-tide)
 (require 'init-yaml)
