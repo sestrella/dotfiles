@@ -1,8 +1,0 @@
----
-- name: Install dev libraries
-  apt:
-    name: "{{ item }}"
-    state: present
-  with_items:
-    - libgeos-dev
-  become: yes

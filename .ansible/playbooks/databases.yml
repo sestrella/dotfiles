@@ -1,7 +1,0 @@
----
-- hosts: all
-  roles:
-    - role: mongodb
-      tags: mongodb
-    - role: postgresql
-      tags: postgresql
