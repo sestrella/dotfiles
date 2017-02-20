@@ -3,5 +3,5 @@ templates:
   params:
     author-email: sebas007estrella@gmail.com
     author-name: Sebastián Estrella
-    copyright: 2017 Sebastián Estrella
     github-username: sestrella
+    year: "2017"
