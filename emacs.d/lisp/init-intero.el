@@ -1,6 +1,5 @@
 (use-package intero
-  :init (add-hook 'haskell-mode-hook 'intero-mode)
-  :ensure t)
-
+  :init
+  (add-hook 'haskell-mode-hook 'intero-mode))
 
 (provide 'init-intero)

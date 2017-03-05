@@ -21,8 +21,8 @@
    (lambda ()
      (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)
      (define-key evil-normal-state-local-map (kbd "SPC") 'neotree-enter)))
-  (eval-after-load 'evil-leader
-    (evil-leader/set-key "n" 'neotree-project-dir))
+  ;;(eval-after-load 'evil-leader
+    ;;(evil-leader/set-key "n" 'neotree-project-dir))
   :ensure t)
 
 (provide 'init-neotree)

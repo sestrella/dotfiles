@@ -1,5 +1,5 @@
 (use-package evil
-  :config (evil-mode 1)
-  :ensure t)
+  :config
+  (evil-mode 1))
 
 (provide 'init-evil)
