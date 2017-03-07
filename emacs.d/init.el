@@ -14,8 +14,10 @@
 (require 'init-evil)
 
 (require 'init-neotree)
-(require 'init-projectile)
 (require 'init-solarized)
+
+(require 'init-magit)
+(require 'init-projectile)
 
 (require 'init-company)
 (require 'init-flycheck)
