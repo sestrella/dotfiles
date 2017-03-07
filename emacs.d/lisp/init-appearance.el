@@ -1,4 +1,7 @@
 (setq linum-format "%3d ")
+
 (global-linum-mode 1)
 
-(provide 'init-linum)
+(menu-bar-mode -1)
+
+(provide 'init-appearance)

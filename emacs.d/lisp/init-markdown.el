@@ -1,4 +1,3 @@
-(use-package markdown-mode
-  :ensure t)
+(use-package markdown-mode)
 
 (provide 'init-markdown)

@@ -1,5 +1,5 @@
 (use-package flycheck
-  :init
+  :config
   (global-flycheck-mode))
 
 (provide 'init-flycheck)
