@@ -1,5 +1,7 @@
 (use-package company
   :config
-  (global-company-mode))
+  (global-company-mode)
+  :diminish
+  company-mode)
 
 (provide 'init-company)
