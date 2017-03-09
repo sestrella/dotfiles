@@ -14,6 +14,7 @@
 (require 'init-evil)
 
 (require 'init-neotree)
+(require 'init-powerline)
 (require 'init-solarized)
 
 (require 'init-magit)
