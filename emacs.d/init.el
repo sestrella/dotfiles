@@ -6,6 +6,7 @@
 (add-to-list 'load-path "~/.emacs.d/lisp")
 
 (require 'init-appearance)
+(require 'init-auto-mode)
 (require 'init-backups)
 (require 'init-indent)
 
