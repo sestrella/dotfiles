@@ -4,6 +4,10 @@
   :config
   (with-eval-after-load "evil"
     (evil-define-key 'normal neotree-mode-map (kbd "RET") 'neotree-enter)
+    (evil-define-key 'normal neotree-mode-map (kbd "ma") 'neotree-create-node)
+    (evil-define-key 'normal neotree-mode-map (kbd "mc") 'neotree-copy-node)
+    (evil-define-key 'normal neotree-mode-map (kbd "md") 'neotree-delete-node)
+    (evil-define-key 'normal neotree-mode-map (kbd "mm") 'neotree-rename-node)
     (evil-define-key 'normal neotree-mode-map (kbd "r") 'custom/neotree-refresh))
 
   (with-eval-after-load "evil-leader"
