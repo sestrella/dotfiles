@@ -1,6 +1,7 @@
 (use-package neotree
   :init
   (setq neo-show-hidden-files t)
+  (setq neo-theme 'arrow)
   :config
   (with-eval-after-load "evil"
     (evil-define-key 'normal neotree-mode-map (kbd "RET") 'neotree-enter)
