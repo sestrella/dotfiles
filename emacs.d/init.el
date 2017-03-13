@@ -26,6 +26,7 @@
 
 (require 'init-intero)
 (require 'init-markdown)
+(require 'init-rainbow)
 (require 'init-tide)
 (require 'init-web)
 (require 'init-yaml)
