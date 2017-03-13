@@ -4,4 +4,4 @@
   :diminish
   flycheck-mode)
 
-(provide 'init-flycheck)
+(provide 'init-syntax-check)

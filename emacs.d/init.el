@@ -12,22 +12,23 @@
 
 (require 'init-use-package)
 
-(require 'init-evil)
+(require 'init-vim)
 
 (require 'init-neotree)
 (require 'init-powerline)
 (require 'init-solarized)
 
-(require 'init-magit)
+(require 'init-git)
 (require 'init-projectile)
 
-(require 'init-company)
-(require 'init-flycheck)
+(require 'init-auto-complete)
+(require 'init-syntax-check)
 
-(require 'init-intero)
+(require 'init-haskell)
 (require 'init-markdown)
 (require 'init-rainbow)
-(require 'init-tide)
+(require 'init-stylesheets)
+(require 'init-typescript)
 (require 'init-web)
 (require 'init-yaml)
 

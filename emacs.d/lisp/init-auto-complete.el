@@ -4,4 +4,4 @@
   :diminish
   company-mode)
 
-(provide 'init-company)
+(provide 'init-auto-complete)

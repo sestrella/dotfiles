@@ -2,4 +2,4 @@
   :init
   (add-hook 'haskell-mode-hook 'intero-mode))
 
-(provide 'init-intero)
+(provide 'init-haskell)
