@@ -9,6 +9,7 @@
 (require 'init-auto-mode)
 (require 'init-backups)
 (require 'init-indent)
+(require 'init-whitespace)
 
 (require 'init-use-package)
 
