@@ -15,13 +15,13 @@
 (require 'init-use-package)
 
 (require 'init-vim)
+(require 'init-projectile)
 
 (require 'init-neotree)
-(require 'init-powerline)
 (require 'init-solarized)
+(require 'init-status-bar)
 
 (require 'init-git)
-(require 'init-projectile)
 
 (require 'init-auto-complete)
 (require 'init-syntax-check)

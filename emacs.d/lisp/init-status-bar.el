@@ -2,4 +2,4 @@
   :config
   (powerline-default-theme))
 
-(provide 'init-powerline)
+(provide 'init-status-bar)
