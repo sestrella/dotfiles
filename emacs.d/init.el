@@ -7,7 +7,6 @@
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 (require 'init-appearance)
-(require 'init-auto-mode)
 (require 'init-backups)
 (require 'init-indent)
 (require 'init-whitespace)
@@ -33,5 +32,6 @@
 (require 'init-typescript)
 (require 'init-web)
 (require 'init-yaml)
+(require 'init-zsh)
 
 (provide 'init)
