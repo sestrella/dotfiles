@@ -25,10 +25,11 @@
 (require 'init-auto-complete)
 (require 'init-syntax-check)
 
+(require 'init-rainbow)
+
+(require 'init-css)
 (require 'init-haskell)
 (require 'init-markdown)
-(require 'init-rainbow)
-(require 'init-stylesheets)
 (require 'init-typescript)
 (require 'init-web)
 (require 'init-yaml)
