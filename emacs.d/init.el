@@ -15,6 +15,7 @@
 
 (require 'init-vim)
 (require 'init-projectile)
+(require 'init-helm)
 
 (require 'init-neotree)
 (require 'init-solarized)
