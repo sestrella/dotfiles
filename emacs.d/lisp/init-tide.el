@@ -7,4 +7,4 @@
 
   (add-hook 'typescript-mode-hook 'tide-setup))
 
-(provide 'init-typescript)
+(provide 'init-tide)
