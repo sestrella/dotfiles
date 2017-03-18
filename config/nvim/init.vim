@@ -10,6 +10,7 @@ Plug 'mhartington/nvim-typescript', { 'do': ':UpdateRemotePlugins' }
 Plug 'neomake/neomake'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -49,3 +50,4 @@ let g:NERDTreeShowHidden = 1
 map <c-n> :NERDTreeToggle<cr>
 
 let g:airline_powerline_fonts = 1
+let g:airline_theme='solarized'
