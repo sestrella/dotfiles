@@ -20,14 +20,18 @@ set splitright
 
 let mapleader = ','
 
-nnoremap <c-h> <c-w><c-h>
-nnoremap <c-j> <c-w><c-j>
-nnoremap <c-k> <c-w><c-k>
-nnoremap <c-l> <c-w><c-l>
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
 
-nnoremap <leader>ev :split $MYVIMRC<cr>
 nnoremap <leader>pi :PlugInstall<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>pu :PlugUpdate<cr>
+
+nnoremap <leader>ve :split $MYVIMRC<cr>
+nnoremap <leader>vs :source $MYVIMRC<cr>
+
+nnoremap <leader>w :w<cr>
 
 let g:deoplete#enable_at_startup = 1
 
