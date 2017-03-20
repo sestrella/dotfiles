@@ -11,6 +11,7 @@ Plug 'neomake/neomake'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
