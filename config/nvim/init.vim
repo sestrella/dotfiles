@@ -9,7 +9,7 @@ colorscheme solarized
 
 let g:neomake_haskell_enabled_makers = ['ghcmod']
 
-autocmd! BufReadPost,BufWritePost * Neomake
+autocmd! BufWritePost * Neomake
 
 let g:NERDTreeShowHidden = 1
 
