@@ -19,6 +19,10 @@ set number
 set splitbelow
 set splitright
 
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
 let mapleader = ','
 
 nnoremap <c-h> <c-w>h
@@ -51,3 +55,8 @@ map <c-n> :NERDTreeToggle<cr>
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
+
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  let g:ctrlp_use_caching = 0
+endif
