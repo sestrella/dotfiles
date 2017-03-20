@@ -47,10 +47,7 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-augroup neomake
-  autocmd!
-  autocmd BufWritePost * Neomake
-augroup end
+autocmd! BufWritePost * Neomake
 
 let g:NERDTreeShowHidden = 1
 
