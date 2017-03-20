@@ -2,16 +2,18 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neco-vim', { 'do': ':UpdateRemotePlugins' }
+Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
+Plug 'bronson/vim-trailing-whitespace'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'eagletmt/neco-ghc', { 'do': ':UpdateRemotePlugins' }
 Plug 'leafgarland/typescript-vim'
 Plug 'mhartington/nvim-typescript', { 'do': ':UpdateRemotePlugins' }
 Plug 'neomake/neomake'
 Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'tpope/vim-surround'
 
 call plug#end()
 
@@ -31,8 +33,8 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
-nnoremap <leader>pi :PlugInstall<cr>
-nnoremap <leader>pu :PlugUpdate<cr>
+nnoremap <leader>pi :source $MYVIMRC<cr>:PlugInstall<cr>
+nnoremap <leader>pu :source $MYVIMRC<cr>:PlugUpdate<cr>
 
 nnoremap <leader>ve :split $MYVIMRC<cr>
 nnoremap <leader>vs :source $MYVIMRC<cr>
@@ -52,7 +54,9 @@ augroup end
 
 let g:NERDTreeShowHidden = 1
 
-map <c-n> :NERDTreeToggle<cr>
+noremap <c-n> :NERDTreeToggle<cr>
+
+noremap <leader>fw :FixWhitespace<cr>
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
