@@ -7,7 +7,9 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-autocmd! BufWritePost * Neomake
+let g:neomake_haskell_enabled_makers = ['ghcmod']
+
+autocmd! BufReadPost,BufWritePost * Neomake
 
 let g:NERDTreeShowHidden = 1
 
