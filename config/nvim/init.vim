@@ -1,45 +1,5 @@
-call plug#begin('~/.local/share/nvim/plugged')
-
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'Shougo/neco-vim', { 'do': ':UpdateRemotePlugins' }
-Plug 'airblade/vim-gitgutter'
-Plug 'altercation/vim-colors-solarized'
-Plug 'bronson/vim-trailing-whitespace'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'eagletmt/neco-ghc', { 'do': ':UpdateRemotePlugins' }
-Plug 'leafgarland/typescript-vim'
-Plug 'mhartington/nvim-typescript', { 'do': ':UpdateRemotePlugins' }
-Plug 'neomake/neomake'
-Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-surround'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-call plug#end()
-
-set number
-
-set splitbelow
-set splitright
-
-set tabstop=2
-set shiftwidth=2
-set expandtab
-
-let mapleader = ','
-
-nnoremap <c-h> <c-w>h
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-l> <c-w>l
-
-nnoremap <leader>pi :source $MYVIMRC<cr>:PlugInstall<cr>
-nnoremap <leader>pu :source $MYVIMRC<cr>:PlugUpdate<cr>
-
-nnoremap <leader>ve :split $MYVIMRC<cr>
-nnoremap <leader>vs :source $MYVIMRC<cr>
-
-nnoremap <leader>w :w<cr>
+source $HOME/.config/nvim/config/general.vim
+source $HOME/.config/nvim/config/vim-plug.vim
 
 let g:deoplete#enable_at_startup = 1
 
