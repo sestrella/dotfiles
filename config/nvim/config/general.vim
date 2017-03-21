@@ -7,6 +7,10 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+set nobackup
+set nowritebackup
+set noswapfile
+
 let mapleader = ','
 
 nnoremap <c-h> <c-w>h
