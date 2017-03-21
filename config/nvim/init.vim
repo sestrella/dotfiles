@@ -1,11 +1,15 @@
-source $HOME/.config/nvim/config/plug.vim
+call plug#begin('~/.local/share/nvim/plugged')
 
-source $HOME/.config/nvim/config/airline.vim
-source $HOME/.config/nvim/config/ctrlp.vim
-source $HOME/.config/nvim/config/deoplete.vim
-source $HOME/.config/nvim/config/general.vim
-source $HOME/.config/nvim/config/neco-ghc.vim
-source $HOME/.config/nvim/config/neomake.vim
-source $HOME/.config/nvim/config/nerdtree.vim
-source $HOME/.config/nvim/config/solarized.vim
-source $HOME/.config/nvim/config/whitespace.vim
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/neco-vim', { 'do': ':UpdateRemotePlugins' }
+Plug 'altercation/vim-colors-solarized'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'eagletmt/neco-ghc', { 'do': ':UpdateRemotePlugins' }
+Plug 'neomake/neomake'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+call plug#end()
