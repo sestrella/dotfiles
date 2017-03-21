@@ -7,6 +7,8 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+set colorcolumn=80
+
 let mapleader = ','
 
 nnoremap <c-h> <c-w>h
