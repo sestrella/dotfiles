@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
-find ~/.emacs.d/lisp -xtype l -delete 
-find ~/.zsh -xtype l -delete 
+find ~/.config/nvim/config -xtype l -delete
+find ~/.emacs.d/lisp -xtype l -delete
+find ~/.zsh -xtype l -delete
