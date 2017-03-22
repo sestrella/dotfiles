@@ -9,6 +9,7 @@ Plug 'eagletmt/neco-ghc', { 'do': ':UpdateRemotePlugins' }
 Plug 'godlygeek/tabular'
 Plug 'neomake/neomake'
 Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
