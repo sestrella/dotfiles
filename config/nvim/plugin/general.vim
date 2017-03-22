@@ -20,3 +20,5 @@ nnoremap <leader>ve :split $MYVIMRC<cr>
 nnoremap <leader>vs :source $MYVIMRC<cr>
 
 nnoremap <leader>w :w<cr>
+
+nnoremap <leader><space> :nohlsearch<cr>
