@@ -9,6 +9,8 @@ set expandtab
 
 set colorcolumn=80
 
+set clipboard+=unnamedplus
+
 let mapleader = ','
 
 nnoremap <c-h> <c-w>h
