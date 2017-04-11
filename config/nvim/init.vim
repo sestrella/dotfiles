@@ -11,6 +11,7 @@ Plug 'eagletmt/neco-ghc', { 'do': ':UpdateRemotePlugins' }
 Plug 'godlygeek/tabular'
 Plug 'nbouscal/vim-stylish-haskell'
 Plug 'neomake/neomake'
+Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-repeat'
