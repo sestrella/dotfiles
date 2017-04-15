@@ -10,5 +10,3 @@ fi
 for f in "$HOME/.zsh/"*.zsh; do
   source $f
 done
-
-export TERM='xterm-256color'
