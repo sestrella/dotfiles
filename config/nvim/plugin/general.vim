@@ -11,6 +11,7 @@ set expandtab
 set colorcolumn=80
 
 set clipboard+=unnamedplus
+set mouse=""
 
 let mapleader = ','
 
