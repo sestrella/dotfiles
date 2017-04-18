@@ -6,7 +6,10 @@
   st = status
 
 [push]
-  default = simple
+  default = current
+
+[pull]
+  default = current
 
 [rerere]
   enabled = true
