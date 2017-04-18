@@ -13,6 +13,7 @@ zmodules=(
   directory
   environment
   git
+  git-info
   history
   input
   utility
