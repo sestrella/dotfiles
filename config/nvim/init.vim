@@ -9,6 +9,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'eagletmt/ghcmod-vim'
 Plug 'eagletmt/neco-ghc', { 'do': ':UpdateRemotePlugins' }
 Plug 'godlygeek/tabular'
+Plug 'majutsushi/tagbar'
 Plug 'nbouscal/vim-stylish-haskell'
 Plug 'neomake/neomake'
 Plug 'pangloss/vim-javascript'
@@ -19,5 +20,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'xolox/vim-easytags'
+Plug 'xolox/vim-misc'
 
 call plug#end()
