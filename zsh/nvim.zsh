@@ -1,4 +1,4 @@
-export EDITOR=vim
+export EDITOR=nvim
 export VISUAL=$EDITOR
 
 if type nvim > /dev/null; then
