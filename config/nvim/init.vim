@@ -8,6 +8,7 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'eagletmt/ghcmod-vim'
 Plug 'eagletmt/neco-ghc', { 'do': ':UpdateRemotePlugins' }
+Plug 'easymotion/vim-easymotion'
 Plug 'godlygeek/tabular'
 Plug 'majutsushi/tagbar'
 Plug 'nbouscal/vim-stylish-haskell'
