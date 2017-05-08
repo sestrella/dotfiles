@@ -13,6 +13,9 @@ set colorcolumn=80
 set clipboard+=unnamedplus
 set mouse=""
 
+set ignorecase
+set smartcase
+
 let mapleader = ','
 
 nnoremap <c-h> <c-w>h
