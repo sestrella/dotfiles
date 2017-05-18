@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-set -e
-
-find ~/.config/nvim/plugin -xtype l -delete
-find ~/.zsh -xtype l -delete
