@@ -6,7 +6,6 @@ Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'altercation/vim-colors-solarized'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'eagletmt/neco-ghc', { 'do': ':UpdateRemotePlugins' }
-Plug 'easymotion/vim-easymotion'
 Plug 'godlygeek/tabular'
 Plug 'kshenoy/vim-signature'
 Plug 'nbouscal/vim-stylish-haskell'
