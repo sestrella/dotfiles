@@ -2,7 +2,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neco-vim', { 'do': ':UpdateRemotePlugins' }
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'altercation/vim-colors-solarized'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'eagletmt/neco-ghc', { 'do': ':UpdateRemotePlugins' }
