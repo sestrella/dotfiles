@@ -1,3 +1,3 @@
-zprompt_theme='minimal'
+zprompt_theme='gitster'
 
 zhighlighters=(main brackets)
