@@ -2,9 +2,6 @@
 
 (menu-bar-mode -1)
 
-(setq linum-format "%d ")
-(global-linum-mode)
-
 (custom-set-variables
   '(haskell-stylish-on-save t))
 
@@ -19,6 +16,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/lisp")
 
+(require 'init-linum)
 (require 'init-evil)
 (require 'init-projectile)
 (require 'init-flycheck)
