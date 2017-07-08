@@ -33,6 +33,10 @@
   :config (add-hook 'after-init-hook 'global-company-mode)
   :ensure t)
 
+(use-package emacs-color-theme-solarized
+  :config (load-theme 'solarized t)
+  :ensure t)
+
 (use-package intero
   :config (add-hook 'haskell-mode-hook 'intero-mode)
   :ensure t)
