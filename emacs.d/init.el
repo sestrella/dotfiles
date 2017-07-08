@@ -17,26 +17,12 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-(use-package evil
-  :config (evil-mode 1)
-  :ensure t)
+(add-to-list 'load-path "~/.emacs.d/lisp")
 
-(use-package projectile
-  :config (projectile-mode)
-  :ensure t)
+(require 'init-evil)
+(require 'init-projectile)
+(require 'init-flycheck)
+(require 'init-company)
+(require 'init-intero)
 
-(use-package flycheck
-  :config (global-flycheck-mode)
-  :ensure t)
-
-(use-package company
-  :config (add-hook 'after-init-hook 'global-company-mode)
-  :ensure t)
-
-(use-package emacs-color-theme-solarized
-  :config (load-theme 'solarized t)
-  :ensure t)
-
-(use-package intero
-  :config (add-hook 'haskell-mode-hook 'intero-mode)
-  :ensure t)
+(provide 'init)
