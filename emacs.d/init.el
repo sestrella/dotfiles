@@ -21,6 +21,10 @@
   :config (evil-mode 1)
   :ensure t)
 
+(use-package projectile
+  :config (projectile-mode)
+  :ensure t)
+
 (use-package flycheck
   :config (global-flycheck-mode)
   :ensure t)
