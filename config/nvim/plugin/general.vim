@@ -23,3 +23,4 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
 nnoremap <leader><space> :nohlsearch<cr>
+noremap ; :

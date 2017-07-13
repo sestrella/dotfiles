@@ -1,1 +1,1 @@
-autocmd! BufEnter,BufWritePost * Neomake
+autocmd! BufWritePost * Neomake
