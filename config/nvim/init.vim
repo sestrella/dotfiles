@@ -1,6 +1,7 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'altercation/vim-colors-solarized'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'eagletmt/neco-ghc', { 'do': ':UpdateRemotePlugins' }
