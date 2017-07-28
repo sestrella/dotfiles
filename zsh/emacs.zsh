@@ -1,1 +1,3 @@
-alias emacs='emacs -nw'
+if type emacs > /dev/null; then
+  alias emacs='emacs -nw'
+fi
