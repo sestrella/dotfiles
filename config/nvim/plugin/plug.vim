@@ -1,2 +1,2 @@
-nnoremap <leader>pi :source $MYVIMRC<cr>:PlugInstall<cr>
-nnoremap <leader>pu :PlugUpdate<cr>
+nnoremap <Leader>pi :source $MYVIMRC<CR>:PlugInstall<CR>
+nnoremap <Leader>pu :PlugUpdate<CR>

@@ -6,7 +6,6 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'eagletmt/neco-ghc', { 'do': ':UpdateRemotePlugins' }
 Plug 'godlygeek/tabular'
-Plug 'hecal3/vim-leader-guide'
 Plug 'kshenoy/vim-signature'
 Plug 'nbouscal/vim-stylish-haskell'
 Plug 'neomake/neomake'

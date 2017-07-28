@@ -17,9 +17,9 @@ set smartcase
 
 let mapleader = ','
 
-nnoremap <c-h> <c-w>h
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-l> <c-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
-nnoremap <leader><space> :nohlsearch<cr>
+nnoremap <Leader><Space> :nohlsearch<CR>
