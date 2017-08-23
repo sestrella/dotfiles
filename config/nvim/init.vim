@@ -24,3 +24,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
+
+let g:python_host_prog = expand('~/.pyenv/versions/2.*/bin/python')
+let g:python3_host_prog = expand('~/.pyenv/versions/3.*/bin/python')
