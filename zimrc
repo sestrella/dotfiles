@@ -36,7 +36,7 @@ zmodules=(
 #
 
 # Set your desired prompt here
-zprompt_theme='minimal'
+zprompt_theme='gitster'
 
 #
 # Completion
