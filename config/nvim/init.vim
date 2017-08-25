@@ -1,3 +1,6 @@
+let g:python_host_prog = expand('~/.pyenv/versions/neovim2/bin/python')
+let g:python3_host_prog = expand('~/.pyenv/versions/neovim3/bin/python')
+
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -24,6 +27,3 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
-
-let g:python_host_prog = expand('~/.pyenv/versions/2.*/bin/python')
-let g:python3_host_prog = expand('~/.pyenv/versions/3.*/bin/python')
