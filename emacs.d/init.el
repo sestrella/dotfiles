@@ -23,6 +23,10 @@
 (require 'evil)
 (evil-mode 1)
 
+
+(global-set-key [escape] 'keyboard-escape-quit)
+(global-set-key (kbd "C-x f") 'fiplr-find-file)
+
 ;;(require 'purescript-mode)
 ;;(require 'psc-ide)
 ;;(add-hook 'purescript-mode-hook
