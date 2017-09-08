@@ -1,6 +1,7 @@
 (setq package-list '())
 (add-to-list 'package-list 'company)
 (add-to-list 'package-list 'evil)
+(add-to-list 'package-list 'evil-leader)
 (add-to-list 'package-list 'fiplr)
 (add-to-list 'package-list 'flycheck)
 (add-to-list 'package-list 'intero)
@@ -23,9 +24,14 @@
 (require 'evil)
 (evil-mode 1)
 
+(tool-bar-mode -1)
+
+(global-evil-leader-mode)
 
 (global-set-key [escape] 'keyboard-escape-quit)
-(global-set-key (kbd "C-x f") 'fiplr-find-file)
+
+(evil-leader/set-leader ",")
+(evil-leader/set-key "p" 'fiplr-find-file)
 
 ;;(require 'purescript-mode)
 ;;(require 'psc-ide)
