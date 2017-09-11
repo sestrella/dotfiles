@@ -52,3 +52,8 @@
 
 (require 'intero)
 (add-hook 'haskell-mode-hook 'intero-mode)
+
+(evil-leader/set-key-for-mode 'haskell-mode "ig" 'intero-goto-definition)
+(evil-leader/set-key-for-mode 'haskell-mode "ir" 'intero-repl-load)
+(evil-leader/set-key-for-mode 'haskell-mode "it" 'intero-targets)
+(evil-leader/set-key-for-mode 'haskell-mode "iy" 'intero-type-at)
