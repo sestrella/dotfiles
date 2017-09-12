@@ -1,8 +1,8 @@
-noremap <Leader>if :InteroLoadCurrentFile<CR>
-noremap <Leader>ig :InteroGenericType<CR>
-noremap <Leader>ih :InteroEval hspec spec<CR>
-noremap <Leader>ik :InteroKill<CR>
-noremap <Leader>io :InteroOpen<CR>
-noremap <Leader>ir :InteroRestart<CR>
-noremap <Leader>is :InteroStart<CR>
-noremap <Leader>it :InteroSetTargets<CR>
+noremap <LocalLeader>if :InteroLoadCurrentFile<CR>
+noremap <LocalLeader>ig :InteroGenericType<CR>
+noremap <LocalLeader>ih :InteroEval hspec spec<CR>
+noremap <LocalLeader>ik :InteroKill<CR>
+noremap <LocalLeader>io :InteroOpen<CR>
+noremap <LocalLeader>ir :InteroRestart<CR>
+noremap <LocalLeader>is :InteroStart<CR>
+noremap <LocalLeader>it :InteroSetTargets<CR>

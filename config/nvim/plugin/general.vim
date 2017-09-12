@@ -15,7 +15,10 @@ set mouse=""
 set ignorecase
 set smartcase
 
-let mapleader = ' '
+set timeoutlen=500
+
+let g:mapleader = "\<Space>"
+let g:maplocalleader = ','
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
