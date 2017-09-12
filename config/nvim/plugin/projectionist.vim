@@ -1,2 +1,2 @@
-noremap <Leader>ps :AS<CR>
-noremap <Leader>pv :AV<CR>
+noremap <Leader>as :AS<CR>
+noremap <Leader>av :AV<CR>
