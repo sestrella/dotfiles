@@ -24,6 +24,7 @@ zmodules=(
   prompt
   completion
   archive
+  ssh
 )
 
 
@@ -90,7 +91,7 @@ zhighlighters=(main brackets)
 #
 
 # Load these ssh identities with the ssh module
-#zssh_ids=(id_rsa)
+zssh_ids=(id_rsa)
 
 
 #
