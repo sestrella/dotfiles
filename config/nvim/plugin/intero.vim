@@ -1,4 +1,4 @@
-"augroup intero
-  "autocmd!
-  "autocmd BufWritePost *.hs InteroReload
-"augroup END
+augroup intero
+  autocmd!
+  autocmd BufWritePost *.hs InteroReload
+augroup END
