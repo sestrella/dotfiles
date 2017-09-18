@@ -55,6 +55,7 @@ ZSH_THEME="robbyrussell"
 plugins=(
   archlinux
   git
+  npm
   nvm
   pyenv
   rbenv
