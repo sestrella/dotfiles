@@ -95,6 +95,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export EDITOR=nvim
 
+alias vim=nvim
+
 alias sb="stack build"
 alias sc="stack clean"
 alias se="stack exec"
