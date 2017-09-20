@@ -1,0 +1,11 @@
+snippet spec
+module `!v substitute(substitute(expand('%:r'), '[/\\]','.','g'),'^\%(\l*\.\)\?','','')` where
+
+import Test.Hspec
+
+spec :: Spec
+spec =
+	describe "${1}" $
+		it "${2}" $
+			pending
+endsnippet
