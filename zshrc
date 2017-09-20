@@ -96,6 +96,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=nvim
 
 alias sb="stack build"
+alias sc="stack clean"
 alias se="stack exec"
 alias sr="stack repl"
 alias st="stack test"
