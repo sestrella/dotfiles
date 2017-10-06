@@ -26,3 +26,6 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 nnoremap <Leader><Space> :nohlsearch<CR>
+
+nnoremap <A-j> :m .+1<CR>
+nnoremap <A-k> :m .-2<CR>
