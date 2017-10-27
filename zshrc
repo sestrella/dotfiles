@@ -13,3 +13,11 @@ if [[ -s ${ZIM_HOME}/init.zsh ]]; then
 fi
 
 export PATH=$HOME/.local/bin:$PATH
+export EDITOR=nvim
+
+alias sb="stack build"
+alias si="stack install"
+alias sr="stack repl"
+alias st="stack test"
+
+alias vim=nvim
