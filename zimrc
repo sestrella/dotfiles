@@ -1,3 +1,5 @@
+
+
 #################
 # CORE SETTINGS #
 #################
@@ -23,8 +25,6 @@ zmodules=(
   history-substring-search
   prompt
   completion
-  archive
-  ssh
 )
 
 
@@ -60,7 +60,7 @@ zprompt_theme='gitster'
 #
 
 # Set the string below to the desired terminal title format string.
-# The terminal title is redrawn upon directory change, however, variables like
+# The terminal title is redrawn upon directory change, however, variables like 
 # ${PWD} are only evaluated once. Use prompt expansion strings for dynamic data:
 #   http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Simple-Prompt-Escapes
 # The example below uses the following format: 'username@host:/current/directory'
@@ -91,7 +91,7 @@ zhighlighters=(main brackets)
 #
 
 # Load these ssh identities with the ssh module
-zssh_ids=(id_rsa)
+#zssh_ids=(id_rsa)
 
 
 #
@@ -102,4 +102,4 @@ zssh_ids=(id_rsa)
 #zpacman_frontend='powerpill'
 
 # Load any helper scripts as defined here
-zpacman_helper=(aur)
+#zpacman_helper=(aur)
