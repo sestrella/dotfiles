@@ -25,6 +25,7 @@ zmodules=(
   history-substring-search
   prompt
   completion
+  pacman
 )
 
 
@@ -99,7 +100,7 @@ zhighlighters=(main brackets)
 #
 
 # Set (optional) pacman front-end.
-#zpacman_frontend='powerpill'
+zpacman_frontend='pacaur'
 
 # Load any helper scripts as defined here
 #zpacman_helper=(aur)
