@@ -1,14 +1,7 @@
-[alias]
-  br = branch
-  ci = commit
-  co = checkout
-  df = diff
-  st = status
-
-[push]
+[pull]
   default = current
 
-[pull]
+[push]
   default = current
 
 [rerere]
