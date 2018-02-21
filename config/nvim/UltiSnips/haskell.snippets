@@ -10,6 +10,10 @@ spec =
 			pending
 endsnippet
 
+snippet module
+module `!v substitute(substitute(expand('%:r'), '[/\\]','.','g'),'^\%(\l*\.\)\?','','')` where
+endsnippet
+
 snippet hspec
 {-# OPTIONS_GHC -F -pgmF hspec-discover #-}
 endsnippet
