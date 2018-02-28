@@ -1,2 +1,17 @@
 source ~/.antigen/antigen.zsh
-antigen init ~/.antigenrc
+
+antigen use oh-my-zsh
+
+antigen bundle git
+antigen bundle nvm
+antigen bundle pyenv
+antigen bundle rbenv
+antigen bundle tmux
+
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen theme robbyrussell
+
+antigen apply
