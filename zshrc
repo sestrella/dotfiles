@@ -1,17 +1,13 @@
-source ~/.antigen/antigen.zsh
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
 
-antigen use oh-my-zsh
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
-antigen bundle git
-antigen bundle nvm
-antigen bundle pyenv
-antigen bundle rbenv
-antigen bundle tmux
-
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-syntax-highlighting
-
-antigen theme robbyrussell
-
-antigen apply
+# Customize to your needs...
