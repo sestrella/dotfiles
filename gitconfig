@@ -1,12 +1,3 @@
-[pull]
-  default = current
-
-[push]
-  default = current
-
-[rerere]
-  enabled = true
-
 [user]
-  name = Sebastián Estrella
-  email = sebas007estrella@gmail.com
+	name = Sebastián Estrella
+	email = sebas007estrella@gmail.com
