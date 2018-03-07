@@ -1,3 +1,8 @@
+[alias]
+	cm = commit
+	co = checkout
+	st = status
+
 [user]
-	name = Sebastián Estrella
 	email = sebas007estrella@gmail.com
+	name = Sebastián Estrella
