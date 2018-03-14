@@ -2,7 +2,7 @@ antigen use oh-my-zsh
 
 antigen bundle git
 antigen bundle nvm
-antigen bundle pyevn
+antigen bundle pyenv
 antigen bundle rbenv
 antigen bundle tmux
 
