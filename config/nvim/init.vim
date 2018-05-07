@@ -12,24 +12,30 @@ Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-"Plug 'SirVer/ultisnips'
-"Plug 'airblade/vim-gitgutter'
-"Plug 'eagletmt/neco-ghc', { 'do': ':UpdateRemotePlugins' }
-"Plug 'godlygeek/tabular'
-"Plug 'hecal3/vim-leader-guide'
-"Plug 'nbouscal/vim-stylish-haskell'
-"Plug 'neomake/neomake'
-"Plug 'pangloss/vim-javascript'
-"Plug 'parsonsmatt/intero-neovim'
-"Plug 'pbrisbin/vim-syntax-shakespeare'
-"Plug 'thoughtbot/vim-rspec'
-"Plug 'tmux-plugins/vim-tmux'
-"Plug 'tpope/vim-abolish'
-"Plug 'tpope/vim-fugitive'
-"Plug 'tpope/vim-projectionist'
-"Plug 'tpope/vim-repeat'
-"Plug 'tpope/vim-surround'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+Plug 'SirVer/ultisnips'
+Plug 'airblade/vim-gitgutter'
+Plug 'godlygeek/tabular'
+Plug 'hecal3/vim-leader-guide'
+Plug 'neomake/neomake'
+Plug 'tmux-plugins/vim-tmux'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-projectionist'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+
+" Haskell
+Plug 'eagletmt/neco-ghc', { 'do': ':UpdateRemotePlugins' }
+Plug 'nbouscal/vim-stylish-haskell'
+Plug 'parsonsmatt/intero-neovim'
+Plug 'pbrisbin/vim-syntax-shakespeare'
+
+" Ruby
+Plug 'thoughtbot/vim-rspec'
+
+" JavaScript
+Plug 'pangloss/vim-javascript'
 
 call plug#end()
