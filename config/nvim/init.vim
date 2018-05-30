@@ -30,6 +30,8 @@ Plug 'parsonsmatt/intero-neovim'
 Plug 'pbrisbin/vim-syntax-shakespeare'
 
 " JavaScript
+Plug 'carlitux/deoplete-ternjs'
+Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 
 " Ruby
