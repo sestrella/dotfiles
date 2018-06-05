@@ -37,4 +37,7 @@ Plug 'pangloss/vim-javascript'
 " Ruby
 Plug 'thoughtbot/vim-rspec'
 
+" TypeScript
+Plug 'leafgarland/typescript-vim'
+
 call plug#end()
