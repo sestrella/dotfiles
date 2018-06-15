@@ -63,6 +63,7 @@ plugins=(
   nvm
   pyenv
   rbenv
+  ssh-agent
 )
 
 source $ZSH/oh-my-zsh.sh
