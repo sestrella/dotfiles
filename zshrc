@@ -64,6 +64,7 @@ plugins=(
   pyenv
   rbenv
   ssh-agent
+  tmux
 )
 
 source $ZSH/oh-my-zsh.sh
