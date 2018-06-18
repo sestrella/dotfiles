@@ -1,4 +1,0 @@
----
-rbenv_repo: https://github.com/rbenv/rbenv.git
-rbenv_dest: ~/.rbenv
-rbenv_version: v1.1.1
