@@ -33,6 +33,7 @@ Plug 'pbrisbin/vim-syntax-shakespeare'
 Plug 'carlitux/deoplete-ternjs'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
+Plug 'posva/vim-vue'
 
 " Ruby
 Plug 'thoughtbot/vim-rspec'
