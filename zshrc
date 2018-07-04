@@ -6,6 +6,7 @@ antigen bundle git
 antigen bundle nvm
 antigen bundle pyenv
 antigen bundle rbenv
+antigen bundle ssh-agent
 antigen bundle tmux
 
 antigen bundle zsh-users/zsh-syntax-highlighting
