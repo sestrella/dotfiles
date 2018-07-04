@@ -8,6 +8,8 @@ antigen bundle pyenv
 antigen bundle rbenv
 antigen bundle tmux
 
+antigen bundle zsh-users/zsh-syntax-highlighting
+
 antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 
 antigen apply
