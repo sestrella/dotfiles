@@ -1,5 +1,0 @@
----
-- git:
-    repo: https://github.com/zsh-users/antigen.git
-    dest: ~/.antigen
-    version: v2.2.3
