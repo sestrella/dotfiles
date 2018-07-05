@@ -4,6 +4,7 @@ SPACESHIP_KUBECONTEXT_SHOW=false
 
 antigen use oh-my-zsh
 
+antigen bundle clipboard
 antigen bundle git
 antigen bundle nvm
 antigen bundle pyenv
