@@ -1,4 +1,4 @@
-let g:python_host_prog = expand('~/.pyenv/versions/neovim3/bin/python')
+let g:python_host_prog = expand('~/.pyenv/versions/neovim2/bin/python')
 let g:python3_host_prog = expand('~/.pyenv/versions/neovim3/bin/python')
 
 call plug#begin('~/.local/share/nvim/plugged')
