@@ -1,9 +1,3 @@
-[alias]
-	cm = commit
-	co = checkout
-	st = status
-	br = branch
-
 [user]
 	name = Sebastián Estrella
 	email = sestrella.me@gmail.com
