@@ -33,7 +33,4 @@ Plug 'pbrisbin/vim-syntax-shakespeare'
 Plug 'mxw/vim-jsx'
 Plug 'posva/vim-vue'
 
-" Shell
-Plug 'dag/vim-fish'
-
 call plug#end()
