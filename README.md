@@ -1,5 +1,7 @@
 # dotfiles
 
+[![Build Status](https://travis-ci.org/sestrella/dotfiles.svg?branch=master)](https://travis-ci.org/sestrella/dotfiles)
+
 My configuration files.
 
 ## Requirements
