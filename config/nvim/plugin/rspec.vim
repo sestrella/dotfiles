@@ -1,1 +1,1 @@
-let g:rspec_command = "!bundle exec rspec {spec}"
+let g:rspec_command = '!bundle exec rspec {spec}'
