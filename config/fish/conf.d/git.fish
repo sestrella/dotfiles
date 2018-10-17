@@ -1,13 +1,9 @@
-abbr ga='git add'
-abbr gaa='git add --all'
-abbr gbr='git branch'
-abbr gc!='git commit -v --amend'
-abbr gc='git commit -v'
-abbr gcb='git checkout -b'
-abbr gco='git checkout'
-abbr gd='git diff'
-abbr gl='git pull'
-abbr gp='git push'
-abbr gpsup='git push --set-upstream origin (git rev-parse --abbrev-ref HEAD)'
-abbr grb='git rebase'
-abbr gst='git status'
+abbr -a ga git add
+abbr -a gaa git add --all
+abbr -a gb git branch
+abbr -a gc git commit -v
+abbr -a gc! git commit -v --amend
+abbr -a gco git checkout
+abbr -a gd git diff
+abbr -a gp git push
+abbr -a gst git status

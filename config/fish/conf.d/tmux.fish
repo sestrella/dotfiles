@@ -1,6 +1,5 @@
-abbr ta='tmux attach -t'
-abbr tad='tmux attach -d -t'
-abbr tkss='tmux kill-session -t'
-abbr tksv='tmux kill-server'
-abbr tl='tmux list-sessions'
-abbr ts='tmux new-session -s'
+abbr -a ta tmux attach -t
+abbr -a tkss tmux kill-session -t
+abbr -a tksv tmux kill-server
+abbr -a tl tmux list-sessions
+abbr -a ts tmux attach-session -t
