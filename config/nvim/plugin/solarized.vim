@@ -1,3 +1,3 @@
 syntax enable
-set background=dark
+set background=light
 silent! colorscheme solarized
