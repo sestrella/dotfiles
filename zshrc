@@ -2,8 +2,10 @@ source ~/.antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
-antigen bundle asdf
 antigen bundle git
+antigen bundle nvm
+antigen bundle pyenv
+antigen bundle rbenv
 antigen bundle ssh-agent
 antigen bundle tmux
 
