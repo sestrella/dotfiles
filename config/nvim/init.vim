@@ -1,5 +1,5 @@
-let g:python_host_prog = expand('~/.asdf/installs/python/2.7.15/bin/python')
-let g:python3_host_prog = expand('~/.asdf/installs/python/3.7.0/bin/python')
+let g:python_host_prog = '/usr/bin/python2'
+let g:python3_host_prog = '/usr/bin/python3'
 
 call plug#begin('~/.local/share/nvim/plugged')
 
