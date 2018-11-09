@@ -2,7 +2,6 @@ source ~/.antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
-antigen bundle aws
 antigen bundle git
 antigen bundle nvm
 antigen bundle pyenv
