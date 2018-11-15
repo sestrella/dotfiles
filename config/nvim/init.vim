@@ -20,6 +20,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'keith/swift.vim'
 
 "Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 "Plug 'airblade/vim-gitgutter'
