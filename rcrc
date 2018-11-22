@@ -1,1 +1,1 @@
-EXCLUDES="Pipfile Pipfile.lock LICENSE README.md"
+EXCLUDES="LICENSE Pipfile Pipfile.lock README.md requirements.txt"
