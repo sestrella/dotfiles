@@ -1,0 +1,14 @@
+source "$ADOTDIR/antigen.zsh"
+
+antigen use oh-my-zsh
+
+antigen bundle git
+antigen bundle nvm
+antigen bundle pip
+antigen bundle pyenv
+antigen bundle rbenv
+antigen bundle tmux
+
+antigen theme robbyrussell
+
+antigen apply
