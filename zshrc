@@ -7,6 +7,7 @@ antigen bundle nvm
 antigen bundle pip
 antigen bundle pyenv
 antigen bundle rbenv
+antigen bundle ssh-agent
 antigen bundle tmux
 
 antigen theme robbyrussell
