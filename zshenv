@@ -4,4 +4,4 @@ export PYENV_ROOT="$HOME/.local/share/pyenv"
 export TMUX_PLUGIN_MANAGER_PATH="$HOME/.local/share/tmux/plugins"
 
 export EDITOR="nvim"
-export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$PYENV_ROOT/bin:/opt/mssql-tools/bin:$PATH"
