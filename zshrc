@@ -10,6 +10,6 @@ antigen bundle rbenv
 antigen bundle ssh-agent
 antigen bundle tmux
 
-antigen theme robbyrussell
+antigen theme denysdovhan/spaceship-prompt
 
 antigen apply
