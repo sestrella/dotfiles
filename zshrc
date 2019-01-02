@@ -8,6 +8,7 @@ antigen bundle pip
 antigen bundle pyenv
 antigen bundle rbenv
 antigen bundle ssh-agent
+antigen bundle stack
 antigen bundle tmux
 
 antigen theme denysdovhan/spaceship-prompt
