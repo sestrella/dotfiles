@@ -1,0 +1,1 @@
+export SPACESHIP_DOCKER_SHOW="false"
