@@ -10,6 +10,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-projectionist'
+Plug 'tpope/vim-surround'
 
 if has('python') || has('python3')
   Plug 'omnisharp/omnisharp-vim'
