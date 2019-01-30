@@ -1,0 +1,1 @@
+set SPACEFISH_DOCKER_SHOW false
