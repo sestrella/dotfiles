@@ -11,6 +11,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'parsonsmatt/intero-neovim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
+Plug 'shougo/deoplete.nvim'
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-surround'
 
