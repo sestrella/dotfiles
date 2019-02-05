@@ -10,6 +10,6 @@ set splitbelow
 set splitright
 
 let mapleader = "\<Space>"
-let maplocalleader = ","
+let maplocalleader = ','
 
 nnoremap <Leader><Leader> :nohlsearch<CR>
