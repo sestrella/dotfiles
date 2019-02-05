@@ -13,3 +13,4 @@ let mapleader = "\<Space>"
 let maplocalleader = ','
 
 nnoremap <Leader><Leader> :nohlsearch<CR>
+nnoremap <Leader>ch :checkhealth<CR>
