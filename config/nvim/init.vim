@@ -1,6 +1,6 @@
 let g:python_host_prog = expand($ASDF_DATA_DIR . '/installs/python/2.7.15/bin/python')
 let g:python3_host_prog = expand($ASDF_DATA_DIR . '/installs/python/3.7.2/bin/python')
-let g:ruby_host_prog = expand($ASDF_DATA_DIR . '/installs/ruby/2.6.0/bin/ruby')
+let g:ruby_host_prog = expand($ASDF_DATA_DIR . '/installs/ruby/2.6.1/bin/ruby')
 
 call plug#begin('~/.local/share/nvim/plugged')
 
