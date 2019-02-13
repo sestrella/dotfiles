@@ -17,6 +17,7 @@ Plug 'tpope/vim-surround'
 
 if has('python') || has('python3')
   Plug 'eagletmt/neco-ghc'
+  Plug 'mhartington/nvim-typescript'
   Plug 'omnisharp/omnisharp-vim'
   Plug 'shougo/deoplete.nvim'
 endif
