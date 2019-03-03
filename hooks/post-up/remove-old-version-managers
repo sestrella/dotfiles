@@ -1,8 +1,0 @@
-#!/bin/sh
-rm -rf ~/.local/share/nvm
-rm -rf ~/.local/share/pyenv
-rm -rf ~/.local/share/rbenv
-
-rm -f ~/.nvmrc
-rm -f ~/.python-version
-rm -f ~/.ruby-version
