@@ -7,6 +7,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'altercation/vim-colors-solarized'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'godlygeek/tabular'
 Plug 'leafgarland/typescript-vim'
 Plug 'neomake/neomake'
 Plug 'ntpeters/vim-better-whitespace'
