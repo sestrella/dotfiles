@@ -31,7 +31,7 @@ $ rcup -v
 
 ## License
 
-Licensed under the [MIT License](LICENSE).
+Licensed under the [MIT License](LICENSE)
 
 [rcm]: https://github.com/thoughtbot/rcm
 [travis-badge]: https://travis-ci.org/sestrella/dotfiles.svg?branch=master

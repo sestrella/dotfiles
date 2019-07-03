@@ -1,5 +1,5 @@
 -i https://pypi.org/simple
 ansicolor==0.2.6
 chardet==3.0.4
-pyyaml==3.13
-vim-vint==0.3.19
+pyyaml==5.1.1
+vim-vint==0.3.21
