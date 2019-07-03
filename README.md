@@ -12,21 +12,21 @@ Install [rcm][rcm]
 
 Clone the repository:
 
-```
-$ git clone https://github.com/sestrella/dotfiles.git ~/.dotfiles
+```sh
+git clone https://github.com/sestrella/dotfiles.git ~/.dotfiles
 ```
 
 Copy the `rcrc` file to your home directory:
 
-```
-$ cd ~/.dotfiles
-$ cp rcrc ~/.rcrc
+```sh
+cd ~/.dotfiles
+cp rcrc ~/.rcrc
 ```
 
 Symlink all dotfiles:
 
-```
-$ rcup -v
+```sh
+rcup -v
 ```
 
 ## License
