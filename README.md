@@ -1,12 +1,12 @@
 # dotfiles
 
-[![Build Status](https://travis-ci.org/sestrella/dotfiles.svg?branch=master)](https://travis-ci.org/sestrella/dotfiles)
+[![Build Status][travis-badge]][travis]
 
-My configuration files.
+My configuration files
 
 ## Requirements
 
-- Install [rcm](https://github.com/thoughtbot/rcm).
+Install [rcm][rcm]
 
 ## Getting Started
 
@@ -32,3 +32,7 @@ $ rcup -v
 ## License
 
 Licensed under the [MIT License](LICENSE).
+
+[rcm]: https://github.com/thoughtbot/rcm
+[travis-badge]: https://travis-ci.org/sestrella/dotfiles.svg?branch=master
+[travis]: https://travis-ci.org/sestrella/dotfiles
