@@ -7,7 +7,6 @@ antigen bundle bundler
 antigen bundle docker
 antigen bundle docker-compose
 antigen bundle git
-antigen bundle globalias
 antigen bundle npm
 antigen bundle pip
 antigen bundle pipenv
