@@ -1,3 +1,4 @@
 let g:NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen = 1
 
-noremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
