@@ -19,3 +19,6 @@ set tabstop=2
 set nobackup
 set noswapfile
 set noundofile
+
+set splitbelow
+set splitright
