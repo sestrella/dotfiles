@@ -8,6 +8,9 @@ Plug 'valloric/youcompleteme'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Ruby
+Plug 'tpope/vim-rails'
+
 call plug#end()
 
 set number
