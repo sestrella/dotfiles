@@ -26,3 +26,5 @@ set noundofile
 
 set splitbelow
 set splitright
+
+set colorcolumn=80
