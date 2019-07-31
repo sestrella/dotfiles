@@ -1,0 +1,6 @@
+---
+name: devbox
+root: ~/code/sestrella/devbox
+windows:
+  - editor: vim
+  - shell: git status
