@@ -8,6 +8,7 @@ antigen bundle git
 antigen bundle mvn
 antigen bundle ssh-agent
 antigen bundle tmux
+antigen bundle tmuxinator
 
 antigen bundle zsh-users/zsh-autosuggestions
 
