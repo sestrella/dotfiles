@@ -9,6 +9,9 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'w0rp/ale'
 
+" HTML
+Plug 'mattn/emmet-vim'
+
 " Ruby
 Plug 'tpope/vim-rails'
 
