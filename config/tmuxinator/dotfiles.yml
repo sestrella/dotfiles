@@ -2,5 +2,5 @@
 name: dotfiles
 root: ~/.dotfiles
 windows:
-  - editor: vim
+  - editor: vim .
   - shell: git status

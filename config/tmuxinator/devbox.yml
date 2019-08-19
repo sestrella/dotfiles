@@ -2,5 +2,5 @@
 name: devbox
 root: ~/code/sestrella/devbox
 windows:
-  - editor: vim
+  - editor: vim .
   - shell: git status
