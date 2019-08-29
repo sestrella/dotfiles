@@ -2,4 +2,4 @@ java oracle-8.141
 nodejs 10.16.3
 python 3.7.4
 ruby 2.6.3
-rust 1.36.0
+rust 1.37.0
