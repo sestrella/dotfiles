@@ -7,6 +7,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'altercation/vim-colors-solarized'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dag/vim-fish'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'rust-lang/rust.vim'
 Plug 'scrooloose/nerdcommenter'
