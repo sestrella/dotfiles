@@ -1,2 +1,2 @@
 DOTFILES_DIRS="~/.dotfiles ~/.stackbuilders-dotfiles"
-EXCLUDES="LICENSE Pipfile Pipfile.lock README.md requirements.txt"
+EXCLUDES="LICENSE Pipfile Pipfile.lock README.md requirements.txt Session.vim"
