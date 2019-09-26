@@ -7,15 +7,19 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'altercation/vim-colors-solarized'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'dag/vim-fish'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'rust-lang/rust.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
-Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-surround'
-Plug 'vim-syntastic/syntastic'
+
+" fish
+Plug 'dag/vim-fish', { 'for': 'fish' }
+
+" haskell
+Plug 'ndmitchell/ghcid', { 'rtp': 'plugins/nvim' }
+
+" typescript
+Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 
 call plug#end()
