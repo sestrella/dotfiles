@@ -1,5 +1,8 @@
 # dotfiles
 
+**This project is unmaintained. My dotfiles are managed by Ansible now, check
+out this [repository](https://github.com/sestrella/devbox) for more details.**
+
 [![Build Status][travis-badge]][travis]
 
 My configuration files
