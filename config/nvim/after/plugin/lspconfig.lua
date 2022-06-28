@@ -63,6 +63,7 @@ local runtime_path = vim.split(package.path, ";")
 table.insert(runtime_path, "lua/?.lua")
 table.insert(runtime_path, "lua/?/init.lua")
 
+-- luacheck: push ignore servers
 local servers = {
   ansiblels = {
     cmd = {
@@ -120,6 +121,7 @@ local servers = {
     },
   },
 }
+-- luacheck: pop
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
