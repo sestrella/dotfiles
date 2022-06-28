@@ -1,5 +1,7 @@
 # dotfiles
 
+My configuration files.
+
 ## Getting Started
 
 Clone the repository:
