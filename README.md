@@ -1,5 +1,7 @@
 # dotfiles
 
+[![Build](https://github.com/sestrella/dotfiles/actions/workflows/build.yml/badge.svg)](https://github.com/sestrella/dotfiles/actions/workflows/build.yml)
+
 My configuration files.
 
 ## Getting Started
