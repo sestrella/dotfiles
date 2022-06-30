@@ -73,14 +73,7 @@ local servers = {
       "--stdio",
     },
   },
-  bashls = {
-    cmd = {
-      "env",
-      "ASDF_NODEJS_VERSION=18.4.0",
-      "bash-language-server",
-      "start",
-    },
-  },
+  bashls = {},
   dockerls = {
     cmd = {
       "env",
