@@ -89,6 +89,7 @@ local servers = {
       "--stdio",
     },
   },
+  hls = {},
   rust_analyzer = {},
   sumneko_lua = {
     settings = {
