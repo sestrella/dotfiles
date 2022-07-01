@@ -49,7 +49,7 @@ local arrows = {
 for arrow, message in pairs(arrows) do
   vim.keymap.set({ "n", "v" }, arrow, function()
     print(message)
-  end)
+  end, { desc = "Disable arrow" })
 end
 
 require("which-key").setup()
