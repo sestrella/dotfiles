@@ -1,13 +1,4 @@
-local set_keymaps = function(keymaps, opts)
-  for keymap, value in pairs(keymaps) do
-    vim.keymap.set(
-      "n",
-      keymap,
-      value.callback,
-      vim.tbl_extend("force", opts, value.opts)
-    )
-  end
-end
+local set_keymaps = require("keymaps").set_keymaps
 
 set_keymaps({
   ["<space>k"] = {
