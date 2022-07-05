@@ -97,12 +97,6 @@ local servers = {
   },
   terraformls = {},
   yamlls = {
-    cmd = {
-      "env",
-      "ASDF_NODEJS_VERSION=18.4.0",
-      "yaml-language-server",
-      "--stdio",
-    },
     settings = {
       yaml = {
         schemas = {
