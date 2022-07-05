@@ -28,7 +28,6 @@ return require("packer").startup(function(use)
 
   use("cormacrelf/dark-notify")
   use("evanleck/vim-svelte")
-  use("folke/which-key.nvim")
   use("hashivim/vim-terraform")
   use("hrsh7th/cmp-vsnip")
   use("hrsh7th/vim-vsnip")

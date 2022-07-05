@@ -54,5 +54,3 @@ for arrow, message in pairs(arrows) do
     print(message)
   end, { desc = "Disable arrow" })
 end
-
-require("which-key").setup()
