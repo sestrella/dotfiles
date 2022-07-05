@@ -59,11 +59,6 @@ local on_attach = function(_client, bufnr)
   require("lsp_signature").on_attach()
 end
 
-local runtime_path = vim.split(package.path, ";")
-table.insert(runtime_path, "lua/?.lua")
-table.insert(runtime_path, "lua/?/init.lua")
-
--- luacheck: ignore
 local servers = require("lsp.servers")
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
