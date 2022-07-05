@@ -65,14 +65,7 @@ table.insert(runtime_path, "lua/?/init.lua")
 
 -- luacheck: ignore
 local servers = {
-  ansiblels = {
-    cmd = {
-      "env",
-      "ASDF_NODEJS_VERSION=18.4.0",
-      "ansible-language-server",
-      "--stdio",
-    },
-  },
+  ansiblels = {},
   bashls = {},
   dockerls = {
     cmd = {
