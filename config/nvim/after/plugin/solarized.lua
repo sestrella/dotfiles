@@ -1,2 +1,7 @@
+local ok, solarized = pcall(require, "solarized")
+if not ok then
+  return
+end
+
 vim.o.termguicolors = true
-vim.cmd("colorscheme solarized")
+solarized.set()

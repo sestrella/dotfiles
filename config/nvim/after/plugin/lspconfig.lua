@@ -1,4 +1,8 @@
-local lspconfig = require("lspconfig")
+local ok, lspconfig = pcall(require, "lspconfig")
+if not ok then
+  return
+end
+
 local servers = require("lsp.servers")
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
