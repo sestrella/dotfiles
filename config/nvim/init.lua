@@ -14,10 +14,8 @@ vim.g.loaded_python3_provider = 0
 vim.g.loaded_python_provider = 0
 vim.g.loaded_ruby_provider = 0
 
-vim.g.mapleader = "<space>"
-vim.g.maplocalleader = "<space>"
-
-require("plugins")
+-- vim.g.mapleader = "<space>"
+-- vim.g.maplocalleader = "<space>"
 
 -- screen
 vim.o.colorcolumn = "80"
@@ -25,7 +23,6 @@ vim.o.cursorline = true
 vim.o.laststatus = 3
 vim.o.number = true
 vim.o.relativenumber = true
-vim.o.termguicolors = true
 -- spaces
 vim.o.expandtab = true
 vim.o.shiftwidth = 2
@@ -37,11 +34,8 @@ vim.o.splitright = true
 -- search
 vim.o.ignorecase = true
 vim.o.smartcase = true
--- splits
-vim.keymap.set("n", "<c-h>", "<c-w><c-h>", {})
-vim.keymap.set("n", "<c-j>", "<c-w><c-j>", {})
-vim.keymap.set("n", "<c-k>", "<c-w><c-k>", {})
-vim.keymap.set("n", "<c-l>", "<c-w><c-l>", {})
+
+require("plugins")
 
 local arrows = {
   ["<right>"] = "Use h instead",
@@ -49,6 +43,7 @@ local arrows = {
   ["<up>"] = "Use k instead",
   ["<left>"] = "Use l instead",
 }
+
 for arrow, message in pairs(arrows) do
   vim.keymap.set({ "n", "v" }, arrow, function()
     print(message)
