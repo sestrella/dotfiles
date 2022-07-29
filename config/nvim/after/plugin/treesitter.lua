@@ -1,8 +1,41 @@
 if not pcall(require, "nvim-treesitter") then
+  vim.notify("nvim-treesitter not found", vim.log.levels.WARN)
   return
 end
 
-require("nvim-treesitter.configs").setup({
+local textobjects_config = function()
+  if pcall(require, "nvim-treesitter-textobjects") then
+    -- https://github.com/nvim-treesitter/nvim-treesitter-textobjects#text-objects-move
+    return {
+      textobjects = {
+        move = {
+          enable = true,
+          set_jumps = true, -- whether to set jumps in the jumplist
+          goto_next_start = {
+            ["]m"] = "@function.outer",
+            ["]]"] = "@class.outer",
+          },
+          goto_next_end = {
+            ["]M"] = "@function.outer",
+            ["]["] = "@class.outer",
+          },
+          goto_previous_start = {
+            ["[m"] = "@function.outer",
+            ["[["] = "@class.outer",
+          },
+          goto_previous_end = {
+            ["[M"] = "@function.outer",
+            ["[]"] = "@class.outer",
+          },
+        },
+      }
+    }
+  end
+  vim.notify("nvim-treesitter-textobjects not found", vim.log.levels.WARN)
+  return {}
+end
+
+require("nvim-treesitter.configs").setup(vim.tbl_extend("error", {
   auto_install = true,
   highlight = {
     enable = true
@@ -15,28 +48,5 @@ require("nvim-treesitter.configs").setup({
       scope_incremental = "grc",
       node_decremental = "grm",
     },
-  },
-  -- https://github.com/nvim-treesitter/nvim-treesitter-textobjects#text-objects-move
-  textobjects = {
-    move = {
-      enable = true,
-      set_jumps = true, -- whether to set jumps in the jumplist
-      goto_next_start = {
-        ["]m"] = "@function.outer",
-        ["]]"] = "@class.outer",
-      },
-      goto_next_end = {
-        ["]M"] = "@function.outer",
-        ["]["] = "@class.outer",
-      },
-      goto_previous_start = {
-        ["[m"] = "@function.outer",
-        ["[["] = "@class.outer",
-      },
-      goto_previous_end = {
-        ["[M"] = "@function.outer",
-        ["[]"] = "@class.outer",
-      },
-    },
   }
-})
+}, textobjects_config()))
