@@ -1,4 +1,5 @@
 if not pcall(require, "telescope") then
+  vim.notify("telescope not found", vim.log.levels.WARN)
   return
 end
 
