@@ -1,5 +1,6 @@
 local ok, lspconfig = pcall(require, "lspconfig")
 if not ok then
+  vim.notify("lspconfig not found", vim.log.levels.WARN)
   return
 end
 
