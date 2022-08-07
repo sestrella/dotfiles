@@ -2,8 +2,7 @@ local runtime_path = vim.split(package.path, ";")
 table.insert(runtime_path, "lua/?.lua")
 table.insert(runtime_path, "lua/?/init.lua")
 
--- TODO: rename function
-local foo = function(cmd, name, value)
+local server = function(cmd, name, value)
   if vim.fn.executable(cmd) == 1 then
     return { [name] = value }
   end
@@ -11,10 +10,10 @@ local foo = function(cmd, name, value)
   return {}
 end
 
-local ansiblels = foo("ansible-language-server", "ansiblels", {})
-local bashls = foo("bash-language-server", "bashls", {})
-local rust_analyzer = foo("rust-analyzer", "rust_analyzer", {})
-local sumneko_lua = foo("lua-language-server", "sumneko_lua", {
+local ansiblels = server("ansible-language-server", "ansiblels", {})
+local bashls = server("bash-language-server", "bashls", {})
+local rust_analyzer = server("rust-analyzer", "rust_analyzer", {})
+local sumneko_lua = server("lua-language-server", "sumneko_lua", {
   settings = {
     -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#sumneko_lua
     Lua = {
@@ -25,8 +24,8 @@ local sumneko_lua = foo("lua-language-server", "sumneko_lua", {
     },
   }
 })
-local terraformls = foo("terraform-ls", "terraformls", {})
-local yamlls = foo("yaml-language-server", "yamlls", {
+local terraformls = server("terraform-ls", "terraformls", {})
+local yamlls = server("yaml-language-server", "yamlls", {
   settings = {
     yaml = {
       schemas = {
