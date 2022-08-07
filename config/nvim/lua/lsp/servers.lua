@@ -1,7 +1,3 @@
-local runtime_path = vim.split(package.path, ";")
-table.insert(runtime_path, "lua/?.lua")
-table.insert(runtime_path, "lua/?/init.lua")
-
 local server = function(cmd, name, value)
   if vim.fn.executable(cmd) == 1 then
     return { [name] = value }
@@ -17,7 +13,7 @@ local sumneko_lua = server("lua-language-server", "sumneko_lua", {
   settings = {
     -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#sumneko_lua
     Lua = {
-      runtime = { version = "LuaJIT", path = runtime_path },
+      runtime = { version = "LuaJIT" },
       diagnostics = { globals = { "vim" } },
       workspace = { library = vim.api.nvim_get_runtime_file("", true) },
       telemetry = { enable = false },
