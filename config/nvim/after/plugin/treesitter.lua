@@ -3,6 +3,23 @@ if not pcall(require, "nvim-treesitter") then
   return
 end
 
+local refactor_config = function()
+  if pcall(require, "nvim-treesitter-refactor") then
+    return {
+      refactor = {
+        highlight_current_scope = {
+          enable = true
+        },
+        highlight_definitions = {
+          enable = true
+        }
+      }
+    }
+  end
+  vim.notify("nvim-treesitter-refactor not found", vim.log.levels.WARN)
+  return {}
+end
+
 local textobjects_config = function()
   if pcall(require, "nvim-treesitter-textobjects") then
     -- https://github.com/nvim-treesitter/nvim-treesitter-textobjects#text-objects-move
@@ -35,7 +52,7 @@ local textobjects_config = function()
   return {}
 end
 
-require("nvim-treesitter.configs").setup(vim.tbl_extend("error", {
+local default_config = {
   auto_install = true,
   highlight = {
     enable = true
@@ -49,11 +66,10 @@ require("nvim-treesitter.configs").setup(vim.tbl_extend("error", {
       node_decremental = "grm",
     },
   }
-}, textobjects_config()))
+}
 
-local ok, treesitter_context = pcall(require, "treesitter-context")
-if ok then
-  treesitter_context.setup({ enable = true })
-else
-  vim.notify("treesitter-context not found", vim.log.levels.WARN)
-end
+require("nvim-treesitter.configs").setup(vim.tbl_extend("error",
+  default_config,
+  refactor_config(),
+  textobjects_config()
+))

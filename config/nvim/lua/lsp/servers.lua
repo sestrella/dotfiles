@@ -22,6 +22,7 @@ local sumneko_lua = server("lua-language-server", "sumneko_lua", {
 })
 local terraformls = server("terraform-ls", "terraformls", {})
 local yamlls = server("yaml-language-server", "yamlls", {
+  cmd = { "env", "ASDF_NODEJS_VERSION=18.4.0", "yaml-language-server", "--stdio" },
   settings = {
     yaml = {
       schemas = {
