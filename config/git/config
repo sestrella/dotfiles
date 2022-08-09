@@ -5,7 +5,8 @@
 [pull]
 	rebase = true
 [push]
-	default = simple
+	autoSetupRemote = true
+	default = current
 [user]
-	name = Sebastián Estrella
 	email = 2049686+sestrella@users.noreply.github.com
+	name = Sebastián Estrella
