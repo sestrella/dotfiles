@@ -1,7 +1,11 @@
+[fetch]
+	prune = true
 [init]
-defaultBranch = main
+	defaultBranch = main
+[pull]
+	rebase = true
 [push]
-default = current
+	default = simple
 [user]
-name = Sebastián Estrella
-email = "2049686+sestrella@users.noreply.github.com"
+	name = Sebastián Estrella
+	email = 2049686+sestrella@users.noreply.github.com
