@@ -29,6 +29,7 @@ local yamlls = server("yaml-language-server", "yamlls", {
         ["https://json.schemastore.org/circleciconfig.json"] = "/.circleci/config.yml",
         ["https://json.schemastore.org/github-workflow.json"] = "/.github/workflows/*.yml",
         ["https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json"] = "/docker-compose*.yml",
+        ["https://kubernetesjsonschema.dev/v1.18.1/all.json"] = "/*.k8s.yml"
       },
     },
   },
