@@ -1,6 +1,8 @@
 eval "$(starship init zsh)"
 . "$(brew --prefix asdf)/libexec/asdf.sh"
 
+export EDITOR="nvim"
+
 alias g="! git commit -v --amend"
 alias ga="git add"
 alias gaa="git add --all"
