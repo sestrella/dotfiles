@@ -19,6 +19,14 @@ asdf_add_plugin() {
 
 git_clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+brew install asdf
+
 asdf_add_plugin nodejs
 asdf_add_plugin python
 asdf_add_plugin ruby
+
+asdf install nodejs lts
+
+asdf global nodejs lts
+
+npm install -g bash-language-server
