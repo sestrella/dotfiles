@@ -12,3 +12,6 @@ alias gd="git diff"
 alias gl="git pull"
 alias gp="git push"
 alias gst="git status"
+
+alias vi="nvim"
+alias vim="nvim"
