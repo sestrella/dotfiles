@@ -4,17 +4,14 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-if [ ! -d ~/.local/share/nvim/site/pack/packer/start/packer.nvim ]; then
-  echo "Installing packer.nvim"
-  git clone --depth 1 https://github.com/wbthomason/packer.nvim \
-    ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-else
-  echo "packer.nvim already exists"
-fi
+git_clone() {
+  if [ -d $2 ]; then
+    echo "$2 already exists"
+  else
+    echo "Installing $2"
+    git clone $1 $2
+  fi
+}
 
-if [ ! -d ~/.tmux/plugins/tpm ]; then
-  echo "Installing tpm"
-  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-else
-  echo "tpm already exists"
-fi
+git_clone "--depth 1 https://github.com/wbthomason/packer.nvim" ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+git_clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
