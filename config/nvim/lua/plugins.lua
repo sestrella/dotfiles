@@ -1,7 +1,8 @@
 local ensure_packer = function()
-  local install_path = vim.fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
-  if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
-    vim.fn.system({ 'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path })
+  local fn = vim.fn
+  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+  if fn.empty(fn.glob(install_path)) > 0 then
+    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
     vim.cmd [[packadd packer.nvim]]
     return true
   end
@@ -13,12 +14,10 @@ local packer_bootstrap = ensure_packer()
 return require("packer").startup(function(use)
   use("wbthomason/packer.nvim")
 
-  use("cormacrelf/dark-notify")
   use("hrsh7th/cmp-nvim-lsp")
   use("hrsh7th/cmp-vsnip")
   use("hrsh7th/nvim-cmp")
   use("hrsh7th/vim-vsnip")
-  use("ishan9299/nvim-solarized-lua")
   use("neovim/nvim-lspconfig")
   use {
     "nvim-telescope/telescope.nvim",
