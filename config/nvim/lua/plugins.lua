@@ -19,6 +19,13 @@ return require("packer").startup(function(use)
     requires = { "nvim-lua/plenary.nvim" }
   }
   use("nvim-treesitter/nvim-treesitter")
+  use {
+    "williamboman/mason-lspconfig.nvim",
+    requires = {
+      "neovim/nvim-lspconfig",
+      "williamboman/mason.nvim"
+    }
+  }
 
   if packer_bootstrap then
     require('packer').sync()

@@ -4,5 +4,6 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
+
 # https://github.com/wbthomason/packer.nvim#bootstrapping
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'

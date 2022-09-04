@@ -1,8 +1,3 @@
-if not pcall(require, "nvim-treesitter") then
-  vim.notify("nvim-treesitter not found", vim.log.levels.WARN)
-  return
-end
-
 require("nvim-treesitter.configs").setup({
   auto_install = true,
   highlight = {

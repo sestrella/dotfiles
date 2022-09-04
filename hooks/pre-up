@@ -24,9 +24,3 @@ brew install asdf
 asdf_add_plugin nodejs
 asdf_add_plugin python
 asdf_add_plugin ruby
-
-asdf install nodejs lts
-
-asdf global nodejs lts
-
-npm install -g bash-language-server
