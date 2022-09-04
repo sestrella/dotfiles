@@ -33,6 +33,18 @@ local servers = {
         },
       },
     },
+  },
+  -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#yamlls
+  yamlls = {
+    settings = {
+      yaml = {
+        schemas = {
+          ["https://json.schemastore.org/circleciconfig.json"] = "/.circleci/config.yml",
+          ["https://json.schemastore.org/github-workflow.json"] = "/.github/workflows/*.yml",
+          ["https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json"] = "/docker-compose*.yml",
+        },
+      },
+    }
   }
 }
 
