@@ -1,14 +1,3 @@
--- https://github.com/williamboman/mason-lspconfig.nvim#setup
-require("mason").setup()
-
-require("mason-lspconfig").setup({
-  ensure_installed = {
-    "bashls",
-    "sumneko_lua",
-    "yamlls"
-  }
-})
-
 local servers = {
   bashls = {},
   -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#sumneko_lua
@@ -68,3 +57,10 @@ local lspconfig = require('lspconfig')
 for server, options in pairs(servers) do
   lspconfig[server].setup(vim.tbl_extend("keep", options, default_options))
 end
+
+require("null-ls").setup({
+  sources = {
+    require("null-ls").builtins.formatting.stylua,
+    require("null-ls").builtins.formatting.terraform_fmt,
+  },
+})
