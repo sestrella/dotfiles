@@ -3,27 +3,19 @@
   ansible.builtin.command: asdf plugin list
   register: asdf_plugin_list
 
-- name: "Declare installed and expected plugins"
+- name: "Declare installed and required plugins"
   set_fact:
     installed_plugins: "{{ asdf_plugin_list.stdout_lines }}"
-    expected_plugins: "{{ asdf_plugins.keys() }}"
+    required_plugins: "{{ asdf_plugins.keys() }}"
 
 - name: "Declare untracked plugins"
   set_fact:
-    untracked_plugins: "{{ installed_plugins | difference(expected_plugins) }}"
+    untracked_plugins: "{{ installed_plugins | difference(required_plugins) }}"
 
 - name: "Remove untracked plugins"
   ansible.builtin.command: "asdf plugin remove {{ item }}"
   loop: "{{ untracked_plugins }}"
 
 - name: "Add plugins"
-  ansible.builtin.command: "asdf plugin add {{ item.key }} {{ item.value.git_url | default }}"
-  args:
-    creates: "{{ asdf_dir }}/plugins/{{ item.key }}"
-  with_dict: "{{ asdf_plugins }}"
-
-- name: "Install plugins dependencies"
-  community.general.homebrew:
-    name: "{{ item.value.dependencies }}"
-  when: item.value.dependencies is defined
+  ansible.builtin.include_tasks: plugin.yml
   with_dict: "{{ asdf_plugins }}"
