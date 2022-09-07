@@ -1,2 +1,4 @@
 #!/bin/sh
-ansible-playbook post-up.yml
+if command -v ansible &> /dev/null; then
+  ansible-playbook post-up.yml
+fi
