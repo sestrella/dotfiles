@@ -3,8 +3,10 @@ asdf_dir: "{{ ansible_user_dir }}/.asdf"
 asdf_plugins:
   cabal:
     git_url: https://github.com/sestrella/asdf-ghcup.git
+    dependencies: [ghcup]
   ghc:
     git_url: https://github.com/sestrella/asdf-ghcup.git
+    dependencies: [ghcup]
   nodejs: {}
   python:
     # https://github.com/pyenv/pyenv/wiki#suggested-build-environment
