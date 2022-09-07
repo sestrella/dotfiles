@@ -1,0 +1,18 @@
+---
+- ansible.builtin.command: asdf plugin list
+  register: asdf_plugin_list
+- set_fact:
+    installed_plugins: "{{ asdf_plugin_list.stdout_lines }}"
+    expected_plugins: "{{ asdf_plugins.keys() }}"
+- set_fact:
+    untracked_plugins: "{{ installed_plugins | difference(expected_plugins) }}"
+- ansible.builtin.command: "asdf plugin remove {{ item }}"
+  loop: "{{ untracked_plugins }}"
+- ansible.builtin.command: "asdf plugin add {{ item.key }} {{ item.value.git_url | default }}"
+  args:
+    creates: "{{ asdf_dir }}/plugins/{{ item.key }}"
+  with_dict: "{{ asdf_plugins }}"
+- community.general.homebrew:
+    name: "{{ item.value.dependencies }}"
+  when: item.value.dependencies is defined
+  with_dict: "{{ asdf_plugins }}"
