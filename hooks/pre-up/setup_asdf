@@ -2,7 +2,20 @@
 
 import subprocess
 
-subprocess.run(["brew", "install", "asdf"])
+def install_asdf():
+  subprocess.run(["brew", "install", "asdf"])
+
+def add_plugins(plugins):
+  for name, plugin in plugins.items():
+    git_url = plugin["git_url"]
+    if git_url is None:
+      subprocess.run(["asdf", "plugin", "add", name])
+    else:
+      subprocess.run(["asdf", "plugin", "add", name, git_url])
+
+    dependencies = plugin["dependencies"]
+    if dependencies:
+      subprocess.run(["brew", "install"] + dependencies)
 
 plugins = {
   "cabal": {
@@ -37,13 +50,5 @@ plugins = {
   }
 }
 
-for name, plugin in plugins.items():
-  git_url = plugin["git_url"]
-  if git_url is None:
-    subprocess.run(["asdf", "plugin", "add", name])
-  else:
-    subprocess.run(["asdf", "plugin", "add", name, git_url])
-
-  dependencies = plugin["dependencies"]
-  if dependencies:
-    subprocess.run(["brew", "install"] + dependencies)
+install_asdf()
+add_plugins(plugins)
