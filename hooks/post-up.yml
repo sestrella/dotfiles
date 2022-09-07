@@ -10,7 +10,7 @@
         untracked_plugins: "{{ installed_plugins | difference(expected_plugins) }}"
     - ansible.builtin.command: "asdf plugin remove {{ item }}"
       loop: "{{ untracked_plugins }}"
-    - ansible.builtin.command:
-        cmd: "asdf plugin add {{ item.key }} {{ item.value }}"
+    - ansible.builtin.command: "asdf plugin add {{ item.key }} {{ item.value.git_url | default }}"
+      args:
         creates: "{{ asdf_dir }}/plugins/{{ item.key }}"
       with_dict: "{{ asdf_plugins }}"
