@@ -1,0 +1,10 @@
+---
+asdf_dir: "{{ ansible_user_dir }}/.asdf"
+asdf_plugins:
+  cabal: https://github.com/sestrella/asdf-ghcup.git
+  ghc: https://github.com/sestrella/asdf-ghcup.git
+  nodejs: null
+  python: null
+  ruby: null
+  rust: null
+  stack: null

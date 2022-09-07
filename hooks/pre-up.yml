@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  tasks:
+    - community.general.homebrew:
+        name: asdf
