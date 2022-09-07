@@ -1,17 +1,5 @@
 ---
 - name: "Install packages"
   community.general.homebrew:
-    name:
-      - ansible
-      - asdf
-      - aws-vault
-      - awscli
-      - gh
-      - git
-      - neovim
-      - rcm
-      - ripgrep
-      - starship
-      - terraform
-      - tmate
-      - tmux
+    name: "{{ homebrew_packages }}"
+  when: homebrew_packages is defined
