@@ -5,8 +5,21 @@ asdf_plugins:
     git_url: https://github.com/sestrella/asdf-ghcup.git
   ghc:
     git_url: https://github.com/sestrella/asdf-ghcup.git
-  nodejs: null
-  python: null
-  ruby: null
-  rust: null
-  stack: null
+  nodejs: {}
+  python:
+    # https://github.com/pyenv/pyenv/wiki#suggested-build-environment
+    dependencies:
+      - openssl
+      - readline
+      - sqlite3
+      - xz
+      - zlib
+      - tcl-tk
+  ruby:
+    # https://github.com/rbenv/ruby-build/wiki#suggested-build-environment
+    dependencies:
+      - libyaml
+      - openssl@1.1
+      - readline
+  rust: {}
+  stack: {}

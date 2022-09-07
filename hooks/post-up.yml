@@ -14,3 +14,7 @@
       args:
         creates: "{{ asdf_dir }}/plugins/{{ item.key }}"
       with_dict: "{{ asdf_plugins }}"
+    - community.general.homebrew:
+        name: "{{ item.value.dependencies }}"
+      when: item.value.dependencies is defined
+      with_dict: "{{ asdf_plugins }}"
