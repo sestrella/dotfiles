@@ -1,3 +1,4 @@
+# vi: ft=yaml.ansible
 ---
 - name: "List installed plugins"
   ansible.builtin.command: asdf plugin list

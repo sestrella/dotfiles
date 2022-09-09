@@ -1,4 +1,6 @@
+-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 local servers = {
+  ansiblels = {},
   bashls = {},
   -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#sumneko_lua
   sumneko_lua = {
@@ -58,10 +60,3 @@ local lspconfig = require('lspconfig')
 for server, options in pairs(servers) do
   lspconfig[server].setup(vim.tbl_extend("keep", options, default_options))
 end
-
-require("null-ls").setup({
-  sources = {
-    require("null-ls").builtins.formatting.stylua,
-    require("null-ls").builtins.formatting.terraform_fmt,
-  },
-})
