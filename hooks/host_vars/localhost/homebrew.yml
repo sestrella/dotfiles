@@ -13,3 +13,14 @@ homebrew_packages:
   - terraform
   - tmate
   - tmux
+
+homebrew_cask_packages:
+  - 1password
+  - font-fira-code-nerd-font
+  - google-chrome
+  - grammarly-desktop
+  - iterm2
+  - rectangle
+  - session-manager-plugin
+  - slack
+  - spotify

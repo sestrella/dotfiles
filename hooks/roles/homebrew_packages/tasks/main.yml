@@ -3,3 +3,8 @@
   community.general.homebrew:
     name: "{{ homebrew_packages }}"
   when: homebrew_packages is defined
+
+- name: "Install cask packages"
+  community.general.homebrew_cask:
+    name: "{{ homebrew_cask_packages }}"
+  when: homebrew_cask_packages is defined
