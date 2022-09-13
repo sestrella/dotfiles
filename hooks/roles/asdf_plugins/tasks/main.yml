@@ -3,6 +3,7 @@
 - name: "List installed plugins"
   ansible.builtin.command: asdf plugin list
   register: asdf_plugin_list
+  changed_when: false
 
 - name: "Declare installed and required plugins"
   set_fact:
