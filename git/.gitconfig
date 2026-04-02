@@ -1,0 +1,5 @@
+[push]
+	autoSetupRemote = true
+	default = simple
+[user]
+	name = Sebastián Estrella
