@@ -1,6 +1,0 @@
-# vi: ft=yaml.ansible
----
-- hosts: localhost
-  roles:
-    - homebrew_packages
-    - asdf_plugins
